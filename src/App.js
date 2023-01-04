@@ -1,10 +1,13 @@
-import NavBar from './components/NavBar';
-import './App.css';
+import Navbar from './components/NavBar';
+import '../src/css/style.css';
 
 function App() {
   return (
-    <NavBar />
+    <>
+    <Navbar navBrand="Swapnil"/>
+    </>
   );
 }
 
 export default App;
+
