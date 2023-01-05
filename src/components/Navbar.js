@@ -33,13 +33,11 @@ function NavBar(props) {
       expanded={expand}
       fixed="top"
       expand="md"
-      bg="dark"
-      variant="dark"
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex navBrand">
-          <h3>{props.navBrand}</h3> 
+        {props.navBrand}
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -54,49 +52,49 @@ function NavBar(props) {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item className="mx-1 my-1">
-              <Nav.Link href="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+            <Nav.Item>
+              <Nav.Link href="/"  onClick={() => updateExpanded(false)}>
+                <AiOutlineHome style={{ marginBottom: "3px" }} /> Home
               </Nav.Link>
             </Nav.Item>
-
-            <Nav.Item className="mx-1 my-1">
+            
+            <Nav.Item>
               <Nav.Link
                 href="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "3px" }} /> About
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item className="mx-1 my-1">
+            <Nav.Item>
               <Nav.Link
                 href="/project"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
+                  style={{ marginBottom: "3px" }}
                 />{" "}
                 Projects
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item className="mx-1 my-1">
+            <Nav.Item>
               <Nav.Link
                 href="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "3px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item className="mx-1 my-1">
+            <Nav.Item>
               <Nav.Link
                 href="https://soumyajitblogs.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <ImBlog style={{ marginBottom: "3px" }} /> Blogs
               </Nav.Link>
             </Nav.Item>
           </Nav>
