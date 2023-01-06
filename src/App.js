@@ -7,6 +7,7 @@ import HomeFirst from './components/Home/HomeFirst';
 import Footer from './components/Footer';
 // import ScrollToTop from "./components/ScrollToTop";
 import "bootstrap/dist/css/bootstrap.min.css";
+import About from './components/About/About';
 
 function App() {
   // const [load, upadateLoad] = useState(true);
@@ -24,6 +25,7 @@ function App() {
     <Navbar navBrand="Swapnil"/>
     {/* <ScrollToTop /> */}
     <HomeFirst name="SWAPNIL MAHADIK"/>
+    <About/>
     <Footer />
     </>
   );

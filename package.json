@@ -10,6 +10,7 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
+    "react-github-calendar": "^3.4.0",
     "react-icons": "^4.7.1",
     "react-parallax-tilt": "^1.7.82",
     "react-router-dom": "^6.6.1",
