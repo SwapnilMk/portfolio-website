@@ -34,7 +34,7 @@ function App() {
         <Navbar navBrand="Swapnil" />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<HomeFirst name="swapnil mahadik" />} />
+          <Route path="/" element={<HomeFirst name="SWAPNIL MAHADIK" />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<ResumeNew />} />

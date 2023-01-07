@@ -129,6 +129,7 @@
 
 .home-about-section {
   position: relative;
+  background-color: rgb(21 15 33);
   padding-bottom: 70px !important;
   padding-top: 70px !important;
 }
@@ -224,7 +225,6 @@
 
 .home-about-section {
   position: relative;
-  background-color: #181025;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
 }
