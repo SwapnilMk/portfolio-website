@@ -9,7 +9,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "../css/navbar.css"
 
@@ -53,14 +53,14 @@ function NavBar(props) {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link href="/"  onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "3px" }} /> Home
               </Nav.Link>
             </Nav.Item>
             
             <Nav.Item>
               <Nav.Link
-                href="/about"
+                as={Link} to="/About"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "3px" }} /> About
@@ -69,7 +69,7 @@ function NavBar(props) {
 
             <Nav.Item>
               <Nav.Link
-                href="/project"
+                as={Link} to="/Project"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
@@ -81,7 +81,7 @@ function NavBar(props) {
 
             <Nav.Item>
               <Nav.Link
-                href="/resume"
+                as={Link} to="/resume"
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "3px" }} /> Resume
@@ -90,7 +90,7 @@ function NavBar(props) {
 
             <Nav.Item>
               <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
+                href="/"
                 target="_blank"
                 rel="noreferrer"
               >
