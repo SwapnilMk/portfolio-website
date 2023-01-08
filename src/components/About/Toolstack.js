@@ -1,12 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {
-  SiLinux,
-  SiVisualstudiocode,
-  SiPostman,
-  SiHeroku,
-  SiVercel,
-} from "react-icons/si";
+import { AiFillGithub, AiFillWindows } from "react-icons/ai";
+import { SiLinux, SiVisualstudiocode, SiPostman } from "react-icons/si";
 
 function Toolstack() {
   return (
@@ -21,10 +16,10 @@ function Toolstack() {
         <SiPostman />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <AiFillGithub />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
+        <AiFillWindows />
       </Col>
     </Row>
   );

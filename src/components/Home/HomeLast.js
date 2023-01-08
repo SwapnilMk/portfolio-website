@@ -19,12 +19,12 @@ function HomeLast() {
                             LET ME <span className="purple"> INTRODUCE </span> MYSELF
                         </h1>
                         <p className="home-about-body">
-                            I'm passionate<b className="purple"> MERN Stack Developer </b> & Computer science graduate
-                            I love exploring new technologies and being a practitioner, I like to stay on top of latest trends 🤷‍♂️
+                            I'm a passionate <b className="purple"> MERN Stack Developer </b> and Computer Science graduate.
+                            I love exploring new technologies, and as a practitioner, I like to stay on top of the latest trends. 🤷‍♂️
                             <br />
                             <br />I am fluent in classics like
                             <i>
-                                <b className="purple"> Javascript, React Js, Node Js </b>
+                                <b className="purple"> Javascript, React Js And Node Js </b>
                             </i>
                             <br />
                             <br />
@@ -87,7 +87,7 @@ function HomeLast() {
                             </li>
                             <li className="social-icons">
                                 <a
-                                    href="https://www.linkedin.com/in/soumyajit4419/"
+                                    href="https://www.linkedin.com/in/swapnil-mahadik-26bb82157/"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="icon-colour  home-social-icons"

@@ -10,7 +10,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Swapnil Mahadik </span>
             from <span className="purple">Mumbai, Maharashtra, India.</span>
-            <br />I am Completed Bachelor of Computer science in Pillai HOC college of Arts commerce & Science
+            <br />I have a bachelor's degree in computer science from Pillai HOC College of Arts, Science and Commerce. 
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
@@ -20,7 +20,7 @@ function AboutCard() {
               <ImPointRight /> Playing Games
             </li>
             <li className="about-activity">
-              <ImPointRight /> listing Music
+              <ImPointRight /> listening Music
             </li>
             <li className="about-activity">
               <ImPointRight /> Traveling
