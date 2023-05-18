@@ -90,11 +90,11 @@ function NavBar(props) {
 
             <Nav.Item>
               <Nav.Link
-                href="/"
+                href="https://github.com/SwapnilMk"
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "3px" }} /> Blogs
+                <ImBlog style={{ marginBottom: "3px" }} /> Github
               </Nav.Link>
             </Nav.Item>
           </Nav>
