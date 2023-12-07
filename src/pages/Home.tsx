@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
+import Skills from "../components/Skills/Skills";
 
 
 const Home = () => {
@@ -11,7 +12,8 @@ const Home = () => {
     return (
         <>
             <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode}  />
-            <Hero />
+            <Hero darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+            <Skills darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         </>
     );
     }
