@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Suspense, lazy } from "react";
+import { Suspense } from "react";
 import { BarLoader } from "react-spinners";
-import HomePage from "./pages/Home";
-import "./App.css"
-
-
+import Home from "./pages/Home";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -20,7 +17,7 @@ const App = () => {
     <Suspense
       fallback={
         <div className="h-screen w-full flex items-center justify-center">
-          <BarLoader color="#f6c400" height={5} />
+          <BarLoader color="#f6c400" height={4} />
         </div>
       }
     >
@@ -29,7 +26,7 @@ const App = () => {
           <BarLoader color="#f6c400" height={4} />
         </div>
       ) : (
-        <HomePage />
+        <Home />
       )}
     </Suspense>
   );
