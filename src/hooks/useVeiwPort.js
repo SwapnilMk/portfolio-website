@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 
 export const useVeiwPort = ({breakPoint}) => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(window.innerWidth > breakPoint ? true : false);
     useEffect(() => {
       const handleResize = () => {
         const newWidth = window.innerWidth;
