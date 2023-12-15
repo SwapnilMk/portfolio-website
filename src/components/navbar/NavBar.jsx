@@ -36,7 +36,10 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
 
   // Toggle the navbar
   const toggleNav = (name) => {
-    setIsOpen(!isOpen);
+    //if window width is greater than breakpoint, then no toggle is needed. 
+    if(window.innerWidth <= 836) {
+      setIsOpen(!isOpen);
+    }
     setActiveIndex(name === activeIndex ? null : name);
   };
 
