@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HiMenu } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
-import { useVeiwPort } from "../../hooks/useVeiwPort";
+import { useViewPort } from "../../hooks/useViewPort";
 
 const navItems = [
   {
@@ -28,16 +28,15 @@ const navItems = [
 ];
 
 const NavBar = ({ toggleDarkMode, darkMode }) => {
-
   const [activeIndex, setActiveIndex] = useState(null);
-  
+
   // 836 represents md in tailwind
-  const { isOpen, setIsOpen } = useVeiwPort({ breakPoint: 836 });
+  const { isOpen, setIsOpen } = useViewPort({ breakPoint: 836 });
 
   // Toggle the navbar
   const toggleNav = (name) => {
-    //if window width is greater than breakpoint, then no toggle is needed. 
-    if(window.innerWidth <= 836) {
+    //if window width is greater than breakpoint, then no toggle is needed.
+    if (window.innerWidth <= 836) {
       setIsOpen(!isOpen);
     }
     setActiveIndex(name === activeIndex ? null : name);

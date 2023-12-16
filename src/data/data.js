@@ -1,5 +1,3 @@
-
-
 export const data = [
   {
     id: 1,
@@ -24,5 +22,5 @@ export const data = [
     link: "",
     git: "",
   }
-  
+
 ];

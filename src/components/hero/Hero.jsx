@@ -10,6 +10,8 @@ import { FiDownload } from "react-icons/fi";
 import { FaPlay } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import resumePDF from "../../assets/Resume.pdf";
+import profilePic from "../../assets/Avatar.svg"
+
 
 const Hero = () => {
   return (
@@ -108,8 +110,8 @@ const Hero = () => {
           <div className="relative h-[88%] w-fit flex items-center sm:items-end">
             <img
               data-aos="fade-up"
-              className=" h-[90%]  w-full object-cover md:h-[95%] md:m-auto sm:m-0"
-              src=""
+              className=" h-[75%] w-full object-cover md:h-[95%] md:m-auto sm:m-0"
+              src={profilePic}
               alt="Profile picture"
             />
             <div className=" absolute bottom-10 md:bottom-3 right-8 md:right-2">
@@ -119,11 +121,13 @@ const Hero = () => {
                 className=" relative cursor-pointer"
               >
                 <img
-                  className=" w-[135px] md:w-[90px] circle-text"
+                  className=" w-[120px] md:w-[90px] circle-text"
                   src="https://ik.imagekit.io/imgkitt/tr:w-400/Full_Stack_Developer2.png?updatedAt=1683134009107"
                   alt=""
                 />
+                <a href="#skills">
                 <FaPlay className=" text-black absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
+                </a>
               </div>
             </div>
           </div>

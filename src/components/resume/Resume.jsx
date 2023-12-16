@@ -95,11 +95,11 @@ const Resume = () => {
                   pariatur quam? Accusantium minima aperiam error obcaecati
                   autem doloribus deserunt qui, laborum incidunt amet, numquam
                   eos cum tempora. Debitis, esse quae corporis deserunt officia
-                  quos in a, quaerat vero odio vitae.
-                  deserunt qui, laborum incidunt amet, numquam
-                  eos cum tempora. Debitis, esse quae corporis deserunt officia
-                  quos in a, quaerat vero odio vitae.deserunt qui, laborum incidunt amet, numquam
-                  eos cum tempora. Debitis, esse quae corporis 
+                  quos in a, quaerat vero odio vitae. deserunt qui, laborum
+                  incidunt amet, numquam eos cum tempora. Debitis, esse quae
+                  corporis deserunt officia quos in a, quaerat vero odio
+                  vitae.deserunt qui, laborum incidunt amet, numquam eos cum
+                  tempora. Debitis, esse quae corporis
                 </p>
               </div>
             </div>
