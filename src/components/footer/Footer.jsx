@@ -1,6 +1,6 @@
 import React from "react";
 import { FaTwitter } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
+import { FaFacebookMessenger } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 
 const Footer = () => {
@@ -24,12 +24,12 @@ const Footer = () => {
           <a
             data-aos="fade-up"
             data-aos-duration="1200"
-            href="https://api.whatsapp.com/send/?phone=917057332679&text&type=phone_number"
+            href="https://www.facebook.com/swapmahadik/"
             target="_blank"
             className="box font-medium text-white  flex items-center justify-center flex-col"
           >
-            <IoLogoWhatsapp className=" text-black text-3xl hover:scale-125 cursor-pointer" />
-            <p className="text-black">WhatsApp</p>
+            <FaFacebookMessenger className=" text-black text-3xl hover:scale-125 cursor-pointer" />
+            <p className="text-black">Facebook</p>
           </a>
           <a
             data-aos="fade-up"

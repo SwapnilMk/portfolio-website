@@ -81,25 +81,26 @@ const Resume = () => {
               {/* design */}
               <div className=" flex flex-col gap-1 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg">
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
-                  Bachelor of Science, Computer Science
+                  Bachelor of Science,<br/> Computer Science
                 </h1>
                 <span className=" text-[.9rem] font-semibold text-gray-500 sm:text-base">
-                  Pillai HOC College of Engineering and Technology
+                  Pillai HOC College of Engineering and <br/> Technology - Rasayani
                 </span>
                 <span className=" text-[.9rem] font-semibold text-yellow-500 sm:text-base">
-                  Year 2017 - Year 2020
+                  Year 2017 - Year 2020 · 3 yrs
                 </span>
                 <p className=" text-[.9rem] text-justify text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Excepturi nihil aut quae obcaecati alias placeat totam aperiam
-                  pariatur quam? Accusantium minima aperiam error obcaecati
-                  autem doloribus deserunt qui, laborum incidunt amet, numquam
-                  eos cum tempora. Debitis, esse quae corporis deserunt officia
-                  quos in a, quaerat vero odio vitae. deserunt qui, laborum
-                  incidunt amet, numquam eos cum tempora. Debitis, esse quae
-                  corporis deserunt officia quos in a, quaerat vero odio
-                  vitae.deserunt qui, laborum incidunt amet, numquam eos cum
-                  tempora. Debitis, esse quae corporis
+                  Completed a comprehensive curriculum at <br/>Pillai HOC College of
+                  Engineering and Technology, specializing in Computer Science.<br/>
+
+                  Gained hands-on experience in programming languages,
+                  algorithms, and software development methodologies.<br/>
+
+                  Maintained a high GPA of 7.5, reflecting a commitment to academic excellence and a strong grasp of complex technical concepts<br/>
+                  
+                  Applied theoretical knowledge
+                  in real-world scenarios, developing a strong foundation for
+                  future endeavors.
                 </p>
               </div>
             </div>

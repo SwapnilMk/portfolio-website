@@ -1,8 +1,22 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { RiSendPlaneFill } from "react-icons/ri";
+import toast, { Toaster } from 'react-hot-toast';
+
+
+
+
 
 const Contact = () => {
+  
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    toast.success('submitted successfully!');
+   
+  };
+
+
   return (
     <div id="contact" className="container m-auto mt-16">
       {/* heading */}
@@ -40,7 +54,8 @@ const Contact = () => {
           <form
             data-aos="zoom-in"
             className="flex justify-center items-center flex-col gap-5 w-[70%] md:w-[100%] sm:w-[95%] mx-auto"
-            action="mailto:xyz@gmail.com"
+            action="mailto:mswapnil218@gmail.com"
+            method="POST"
           >
             <input
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
@@ -62,16 +77,26 @@ const Contact = () => {
               name=""
               id=""
             />
-            <button
-              className="bg-yellow-500 w-full text-white font-semibold  p-2 rounded-lg flex items-center justify-center space-x-1"
-              type="submit"
-            >
+           <button
+  className="bg-yellow-500 w-full text-white font-semibold p-2 rounded-lg flex items-center justify-center space-x-1"
+  type="submit"
+  onClick={handleSubmit}
+>
+  
               <span>Send</span>
               <RiSendPlaneFill />
             </button>
           </form>
         </div>
       </div>
+      <Toaster toastOptions={{
+    className: 'relative top-20',
+    style: {
+      padding: '15px',
+      color: '#000'
+    },
+  }}
+ />
     </div>
   );
 };
