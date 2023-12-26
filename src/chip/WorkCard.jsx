@@ -20,7 +20,7 @@ const WorkCard = () => {
             <POPUP className="img-content relative">
               <div className="h-[240px] w-[auto] hover:scale-125 transition duration-500 cursor-pointer shadow-xl rounded-md overflow-hidden sm:h-[260px] sm:w-[92%] sm:bg-cover mx-auto ">
                 <img
-                  src={data.img}
+                  src={(data.img)}
                   alt={data.title}
                   className=" object-fit w-full h-full hover:scale-125 transition duration-500 cursor-pointer"
                 />
