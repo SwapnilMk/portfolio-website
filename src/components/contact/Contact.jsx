@@ -1,21 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { BsArrowRight } from "react-icons/bs";
 import { RiSendPlaneFill } from "react-icons/ri";
-import toast, { Toaster } from 'react-hot-toast';
-
-
-
-
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
-  
-  
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    toast.success('submitted successfully!');
-   
-  };
+  const form = useRef();
+  const emailRef = useRef();
+  const nameRef = useRef();
+  const messageRef = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_omca00j",
+        "template_c7d70c6",
+        form.current,
+        "17PCsedw6oo2Kjoi_"
+      )
+      .then(
+        (result) => {
+          toast.success("submitted successfully!");
+          emailRef.current.value = "";
+          nameRef.current.value = "";
+          messageRef.current.value = ""; //clear values using ref
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <div id="contact" className="container m-auto mt-16">
@@ -52,51 +68,53 @@ const Contact = () => {
         </div>
         <div className="right flex-1">
           <form
+            ref={form}
+            onSubmit={sendEmail}
             data-aos="zoom-in"
             className="flex justify-center items-center flex-col gap-5 w-[70%] md:w-[100%] sm:w-[95%] mx-auto"
-            action="mailto:mswapnil218@gmail.com"
-            method="POST"
           >
             <input
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               type="email"
               placeholder="e.g. example@email.com"
-              name=""
+              name="user_email"
+              ref={emailRef}
             />
             <input
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               type="text"
               placeholder="e.g. Swapnil Mahadik"
-              name=""
+              name="from_name"
+              ref={nameRef}
             />
             <textarea
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               rows="4"
               cols="50"
               placeholder="Write your message"
-              name=""
-              id=""
+              name="message"
+              ref={messageRef}
             />
-           <button
-  className="bg-yellow-500 w-full text-white font-semibold p-2 rounded-lg flex items-center justify-center space-x-1"
-  type="submit"
-  onClick={handleSubmit}
->
-  
+            <button
+              className="bg-yellow-500 w-full text-white font-semibold p-2 rounded-lg flex items-center justify-center space-x-1"
+              type="submit"
+              value="Send"
+            >
               <span>Send</span>
               <RiSendPlaneFill />
             </button>
           </form>
         </div>
       </div>
-      <Toaster toastOptions={{
-    className: 'relative top-20',
-    style: {
-      padding: '15px',
-      color: '#000'
-    },
-  }}
- />
+      <Toaster
+        toastOptions={{
+          className: "relative top-20",
+          style: {
+            padding: "15px",
+            color: "#000",
+          },
+        }}
+      />
     </div>
   );
 };
