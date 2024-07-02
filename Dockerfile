@@ -11,6 +11,5 @@ FROM nginx:1.25-alpine
 WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 COPY --from=build /app/.next /usr/share/nginx/html
-COPY --from=build /app/public /usr/share/nginx/html
 EXPOSE 80
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
