@@ -39,7 +39,6 @@ export const DATA = {
     ],
     navbar: [
         { href: "/", icon: HomeIcon, label: "Home" },
-        { href: "/guestbook", icon: FilePen, label: "Guestbook" },
     ],
     cs50_images: [
         "/certificates/CSS_basic_certificate_HackerRank.png",
@@ -93,7 +92,7 @@ export const DATA = {
         {
             company: "Asian Exporters' Chamber Of Commerce & Industry",
             href: "https://aecci.org.in",
-            // badges: [""],
+            badges: [""],
             location: "Belapur CBD, Navi Mumbai",
             title: "Software Developer",
             logoUrl: "/companyLogo/aecci logo.jpeg",
@@ -128,164 +127,59 @@ export const DATA = {
             school: "Janata Junior college",
             href: "/",
             degree: "PCM",
-            // logoUrl: "/cms.jfif",
+            logoUrl: "",
             start: "2015",
             end: "2017",
         }
     ],
     projects: [
-        // {
-        //     title: "PalettePro",
-        //     href: "https://palettepro.vercel.app",
-        //     dates: "January, 2024",
-        //     active: true,
-        //     description:
-        //         "PalettePro is a color palette generator. Built with Next.js 14, Tailwind CSS, and TypeScript, it lets users upload images and get hex color codes for creative projects. Perfect for people who spend time struggling what color 'this' or 'that' is using.",
-        //     technologies: [
-        //         "Next.js 14",
-        //         "Tailwind CSS",
-        //         "TypeScript",
-        //         "ColorThief",
-        //         "Vercel",
-        //     ],
-        //     links: [
-        //         {
-        //             type: "Live Website",
-        //             href: "https://palettepro.vercel.app",
-        //             icon: <Icons.globe className="size-3" />,
-        //         },
-        //     ],
-        //     image: "/project1.png",
-        // },
-        // {
-        //     title: "TBH",
-        //     href: "https://tbh-link.vercel.app/",
-        //     dates: "June 2024 - August 2024",
-        //     active: true,
-        //     description:
-        //         "TBH is a Q&A app where users can connect with friends and be themselves. It's built with Next.js, TypeScript, and Tailwind CSS, offering unique ways to share prompt images and interact with their audience.",
-        //     technologies: [
-        //         "Next.js",
-        //         "TypeScript",
-        //         "Tailwind CSS",
-        //         "MongoDB",
-        //         "Vercel",
-        //         "NextAuth",
-        //     ],
-        //     links: [
-        //         {
-        //             type: "Live Website",
-        //             href: "https://tbh-link.vercel.app/",
-        //             icon: <Icons.globe className="size-3" />,
-        //         },
-        //     ],
-        //     image: "/project2.png",
-        // },
-        // {
-        //     title: "VendX",
-        //     href: "https://vendx.com",
-        //     dates: "July 2024",
-        //     active: true,
-        //     description:
-        //         "VendX is an e-commerce platform with an admin dashboard and storefront. Made with Next.js, Tailwind CSS, and DrizzleORM, it lets users manage products, categories, colors, and sizes. It's very flexible and user-friendly.",
-        //     technologies: [
-        //         "Next.js",
-        //         "TypeScript",
-        //         "Tailwind CSS",
-        //         "DrizzleORM",
-        //         "Neon",
-        //         "Shadcn/UI",
-        //         "Clerk",
-        //     ],
-        //     links: [
-        //         {
-        //             type: "Admin Dashboard",
-        //             href: "https://vendx-admin.vercel.app",
-        //             icon: <Icons.globe className="size-3" />,
-        //         },
-        //         {
-        //             type: "Store",
-        //             href: "https://vendx-store.vercel.app",
-        //             icon: <Icons.globe className="size-3" />,
-        //         },
-        //     ],
-        //     image: "/project3.png",
-        // },
-        // {
-        //     title: "SortingWiz",
-        //     href: "https://www.youtube.com/watch?v=hjY9Ifs8L6U",
-        //     dates: "January 2024",
-        //     active: true,
-        //     description:
-        //         "SortingWiz is a tool made with Python and Pygame that visualizes sorting algorithms. Users can watch the sorting process in real-time and control the speed. It supports Bubble Sort, Insertion Sort, Selection Sort, and Heap Sort.",
-        //     technologies: [
-        //         "Python",
-        //         "Pygame"
-        //     ],
-        //     links: [
-        //         {
-        //             type: "Video Demo",
-        //             href: "https://www.youtube.com/watch?v=hjY9Ifs8L6U",
-        //             icon: <Icons.youtube className="size-3" />
-        //         },
-        //         {
-        //             type: "Source Code",
-        //             href: "https://github.com/ArjunCodess/algorithm_visualizer_pygame",
-        //             icon: <Icons.github className="size-3" />
-        //         }
-        //     ],
-        //     image: "/project4.png",
-        // },
-        // {
-        //     title: "Dropbox 2.0",
-        //     href: "https://dropbox-2-0-arjuncodess.vercel.app/",
-        //     dates: "January 2024",
-        //     active: true,
-        //     description:
-        //         "Dropbox 2.0 is a cloud storage app built with Next.js 14. Users can store and manage files with a drag-and-drop interface. The app uses Clerk for login and Firebase for secure file storage.",
-        //     technologies: [
-        //         "Next.js",
-        //         "Clerk",
-        //         "Shadcn/UI",
-        //         "Tailwind CSS",
-        //         "Firebase",
-        //         "TypeScript"
-        //     ],
-        //     links: [
-        //         {
-        //             "type": "Website",
-        //             "href": "https://dropbox-2-0-arjuncodess.vercel.app/",
-        //             "icon": <Icons.globe className="size-3" />
-        //         }
-        //     ],
-        //     image: "/project5.png",
-        // },
-        // {
-        //     title: "Pixify",
-        //     href: "https://pixify-arjuncodess-projects.vercel.app/",
-        //     dates: "Jun 2024",
-        //     active: true,
-        //     description:
-        //         "Pixify is an image transformation app created with Next.js 14. It allows users to upload, manage, search, and edit images using AI. The app includes user authentication, image uploads to Cloudinary, and features like search and pagination.",
-        //     technologies: [
-        //         "Next.js",
-        //         "Clerk",
-        //         "Tailwind CSS",
-        //         "React Hook Form",
-        //         "Zod",
-        //         "Cloudinary",
-        //         "TypeScript",
-        //         "Tailwind CSS"
-        //     ],
-        //     links: [
-        //         {
-        //             type: "Website",
-        //             href: "https://pixify-arjuncodess-projects.vercel.app/",
-        //             icon: <Icons.globe className="size-3" />
-        //         }
-        //     ],
-        //     image: "/project6.png",
-        // },
+        {
+            title: "News Hunt",
+            href: "https://news-huntweb.netlify.app/",
+            dates: "January, 2023",
+            active: true,
+            description:
+                "Welcome to my news website, where you can find the latest updates on current events and important issues. I strive to bring you accurate and unbiased coverage of the stories that matter most. Whether you're interested in politics, sports, entertainment, or something else entirely, you'll find something of interest on my site. Thank you for visiting, and I hope you enjoy your stay!",
+            technologies: [
+                "React.js",
+                "React Bootstrap",
+                "Javascript",
+                "netlify",
+            ],
+            links: [
+                {
+                    type: "Live Website",
+                    href: "https://news-huntweb.netlify.app/",
+                    icon: <Icons.globe className="size-3" />,
+                },
+            ],
+            image: "",
+        },
+        {
+            title: "Text Utils",
+            href: "https://text-utilsweb.netlify.app/",
+            dates: "June 2023 - july 2023",
+            active: true,
+            description:
+                "Welcome to my text utilities website, where you can find a range of tools to help you manipulate and analyze text data. Whether you're a researcher, writer, or just someone who works with a lot of text, you'll find something useful here. Some of the tools you'll find on my site include a word count tool, Convert to uppercase lowercase, and a text diff tool to help you compare changes between different versions of a document. Thank you for visiting, and I hope you find my text utilities website helpful!",
+            technologies: [
+                "Next.js",
+                "TypeScript",
+                "Tailwind CSS",
+                "MongoDB",
+                "Vercel",
+                "NextAuth",
+            ],
+            links: [
+                {
+                    type: "Text Utils",
+                    href: "https://text-utilsweb.netlify.app/",
+                    icon: <Icons.globe className="size-3" />,
+                },
+            ],
+            image: "",
+        },
+     
     ],
     personalAchievements: [
         {
