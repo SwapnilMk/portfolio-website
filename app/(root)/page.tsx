@@ -8,6 +8,7 @@ import { pagesConfig } from "@/config/pages";
 import { featuredSkills } from "@/config/skills";
 import { cn } from "@/lib/utils";
 import namanImg from "@/public/swapnil-profile.jpg";
+import { FlipWords } from "@/components/ui/flip-word";
 // import {
 //     Accordion,
 //     AccordionContent,
@@ -27,6 +28,23 @@ export const metadata: Metadata = {
 };
 
 export default async function IndexPage() {
+  const words = [
+    "Frontend Developer",
+    "Backend Developer",
+    "Full Stack Developer",
+    "UI/UX Designer",
+    "Web Engineer",
+    "Software Developer",
+    "Digital Designer",
+    "Web Architect",
+    "Creative Coder",
+    "Technical Lead",
+    "DevOps Specialist",
+    "Mobile App Developer",
+    "E-commerce Specialist",
+    "SEO Expert",
+    "Content Strategist"
+  ];
   return (
     <>
       <section className="flex items-center h-screen pt-6 pb-8 mb-0 space-y-6 md:pb-12 md:py-20 lg:py-32">
@@ -52,7 +70,7 @@ export default async function IndexPage() {
             Swapnil Mahadik
           </h1>
           <h3 className="text-base font-heading sm:text-xl md:text-xl lg:text-2xl">
-            Full Stack Developer
+            Full Stack<FlipWords words={words} />
           </h3>
           {/* <Accordion
                         type="single"
