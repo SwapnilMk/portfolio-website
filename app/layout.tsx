@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import { GoogleAnalytics } from "@next/third-parties/google";
+// import { GoogleAnalytics } from "@next/third-parties/google";
 import { Inter as FontSans } from "next/font/google";
 import localFont from "next/font/local";
 
@@ -65,10 +65,10 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  const GA_ID = process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID;
-  if (!GA_ID) {
-    throw new Error("Missing Google Analytics ID");
-  }
+  // const GA_ID = process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID;
+  // if (!GA_ID) {
+  //   throw new Error("Missing Google Analytics ID");
+  // }
 
   return (
     <html lang="en" suppressHydrationWarning>
@@ -87,7 +87,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <ModalProvider />
         </ThemeProvider>
       </body>
-      <GoogleAnalytics gaId={GA_ID} />
+      {/* <GoogleAnalytics gaId={GA_ID} /> */}
     </html>
   );
 }
