@@ -7,20 +7,12 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { pagesConfig } from "@/config/pages";
 import { featuredSkills } from "@/config/skills";
 import { cn } from "@/lib/utils";
-import namanImg from "@/public/swapnil-profile.jpg";
+import swapnilImg from "@/public/swapnil-profile.jpg";
 import { FlipWords } from "@/components/ui/flip-word";
-// import {
-//     Accordion,
-//     AccordionContent,
-//     AccordionItem,
-//     AccordionTrigger,
-// } from "@/components/ui/accordion";
-// import {
-//     DropdownMenu,
-//     DropdownMenuContent,
-//     DropdownMenuLabel,
-//     DropdownMenuTrigger,
-// } from "@/components/ui/dropdown-menu";
+import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
+import { SocialLinks } from "@/config/socials";
+import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
+import { ArrowRightIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: pagesConfig.home.metadata.title,
@@ -29,36 +21,34 @@ export const metadata: Metadata = {
 
 export default async function IndexPage() {
   const words = [
+    "Full Stack Developer",
     "Frontend Developer",
     "Backend Developer",
-    "Full Stack Developer",
     "UI/UX Designer",
     "Web Engineer",
     "Software Developer",
-    "Digital Designer",
-    "Web Architect",
     "Creative Coder",
     "Technical Lead",
     "DevOps Specialist",
-    "Mobile App Developer",
-    "E-commerce Specialist",
     "SEO Expert",
-    "Content Strategist"
   ];
+
   return (
     <>
       <section className="flex items-center h-screen pt-6 pb-8 mb-0 space-y-6 md:pb-12 md:py-20 lg:py-32">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20">
-          {/* <Link
-                        href={"siteConfig.links.twitter"}
-                        className="rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium"
-                        target="_blank"
-                    >
-                        Follow along on Twitter
-                    </Link> */}
-          {/* <div className="max-w-[16rem]"> */}
+          <Link
+            href={SocialLinks[2].link}
+            className="flex rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium hover:text-blue-500"
+            target="_blank"
+          >
+          <AnimatedShinyText className="inline-flex items-center justify-center transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+            <span>✨ Follow along on Twitter </span>
+            <Icons.twitter className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+          </AnimatedShinyText>        
+          </Link>
           <Image
-            src={namanImg}
+            src={swapnilImg}
             height={100}
             width={100}
             sizes="100vw"
@@ -70,47 +60,24 @@ export default async function IndexPage() {
             Swapnil Mahadik
           </h1>
           <h3 className="text-base font-heading sm:text-xl md:text-xl lg:text-2xl">
-            Full Stack<FlipWords words={words} />
+            <FlipWords words={words} />
           </h3>
-          {/* <Accordion
-                        type="single"
-                        collapsible
-                        className="flex items-center w-full max-w-[35rem]"
-                    >
-                        <AccordionItem value="main-ques" className="flex-1">
-                            <AccordionTrigger>
-                                <p className="flex items-center">
-                                    Can you guess my favorite coding problem?
-                                </p>
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                &ldquo;Check if a given string is palindrome or
-                                not&rdquo;
-                                <Icons.laughEmoji className="w-4 h-5 ml-2 md:w-5" />
-                            </AccordionContent>
-                        </AccordionItem>
-                        <DropdownMenu>
-                            <DropdownMenuTrigger
-                                asChild
-                                className="cursor-pointer"
-                            >
-                                <Icons.questionMark className="w-5 h-5 ml-3 text-muted-foreground " />
-                            </DropdownMenuTrigger>
-                            <DropdownMenuContent className="w-56">
-                                <DropdownMenuLabel className="flex items-center text-muted-foreground">
-                                    <Icons.infoMark className="w-4 h-4 mr-2" />
-                                    Hint: Naman
-                                </DropdownMenuLabel>
-                            </DropdownMenuContent>
-                        </DropdownMenu>
-                    </Accordion> */}
-
-          {/* <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-                        Full-stack web developer with two years&apos; experience
-                        who is innovative and ambitious. Excellent analytical
-                        and creative abilities, with a heavy emphasis on writing
-                        well-documented code.
-                    </p> */}
+          <AnimatedGridPattern
+            numSquares={30}
+            maxOpacity={0.1}
+            duration={3}
+            repeatDelay={1}
+            className={cn(
+              "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
+              "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12 -z-40",
+            )}
+          />
+          <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
+            Full-stack web developer with two years&apos; experience
+            who is innovative and ambitious. Excellent analytical
+            and creative abilities, with a heavy emphasis on writing
+            well-documented code.
+          </p>
           <div className="flex flex-col items-center justify-center gap-3 mt-10 sm:flex-row sm:space-x-4">
             <Link
               href={"https://github.com/SwapnilMk"}
@@ -153,13 +120,14 @@ export default async function IndexPage() {
             <Icons.chevronDown className="w-4 h-4 mr-2" /> View All
           </Button>
         </Link>
-        {/* <div className="mx-auto text-center md:max-w-[58rem]">
-                    <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                        See all the relevant skills.
-                    </p>
-                </div> */}
+        <div className="mx-auto text-center md:max-w-[58rem]">
+          <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+            See all the relevant skills.
+          </p>
+        </div>
+
       </section>
-       {/*
+      {/*
       <section
         id="experience"
         className="container py-10 space-y-6 dark:bg-transparent my-14"
