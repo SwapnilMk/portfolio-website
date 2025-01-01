@@ -12,7 +12,8 @@ import { FlipWords } from "@/components/ui/flip-word";
 import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 import { SocialLinks } from "@/config/socials";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
-import { ArrowRightIcon } from "lucide-react";
+import { RainbowButton } from "@/components/ui/rainbow-button";
+import ShinyButton from "@/components/ui/shiny-button";
 
 export const metadata: Metadata = {
   title: pagesConfig.home.metadata.title,
@@ -42,10 +43,10 @@ export default async function IndexPage() {
             className="flex rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium hover:text-blue-500"
             target="_blank"
           >
-          <AnimatedShinyText className="inline-flex items-center justify-center transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-            <span>✨ Follow along on Twitter </span>
-            <Icons.twitter className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-          </AnimatedShinyText>        
+            <AnimatedShinyText className="inline-flex items-center justify-center transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+              <span>✨ Follow along on Twitter </span>
+              <Icons.twitter className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+            </AnimatedShinyText>
           </Link>
           <Image
             src={swapnilImg}
@@ -82,21 +83,22 @@ export default async function IndexPage() {
             <Link
               href={"https://github.com/SwapnilMk"}
               target="_blank"
-              className={cn(buttonVariants({ size: "lg" }))}
             >
-              <Icons.gitHub className="w-4 h-4 mr-2" /> GitHub
+              <RainbowButton> <Icons.gitHub className="w-4 h-4 mr-2" /> GitHub</RainbowButton>
             </Link>
-            <Link
-              href={"/contact"}
-              rel="noreferrer"
-              className={cn(
-                buttonVariants({
-                  variant: "outline",
-                  size: "lg",
-                })
-              )}
-            >
-              <Icons.contact className="w-4 h-4 mr-2" /> Contact
+            <Link href="/contact" passHref>
+              <ShinyButton
+                className={cn(
+                  "flex items-center justify-center",
+                  "rounded-lg text-lg",
+                  buttonVariants({
+                    variant: "outline",
+                    size: "lg",
+                  })
+                )}
+              >
+                <span className="flex items-center justify-center gap-1"><Icons.contact className="w-4 h-4 mr-2" /> Contact</span>
+              </ShinyButton>
             </Link>
           </div>
           <Icons.chevronDown className="w-6 h-6 mt-10" />
