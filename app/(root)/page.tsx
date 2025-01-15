@@ -14,6 +14,8 @@ import { SocialLinks } from "@/config/socials";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import ShinyButton from "@/components/ui/shiny-button";
+import ProjectCard from "@/components/projects/project-card";
+import { featuredProjects } from "@/config/projects";
 
 export const metadata: Metadata = {
   title: pagesConfig.home.metadata.title,
@@ -129,36 +131,36 @@ export default async function IndexPage() {
         </div>
 
       </section>
-      {/*
+      
       <section
-        id="experience"
+        id="project"
         className="container py-10 space-y-6 dark:bg-transparent my-14"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
           <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-            {pagesConfig.experience.title}
+            {pagesConfig.projects.title}
           </h2>
           <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-            {pagesConfig.experience.description}
+            {pagesConfig.projects.description}
           </p>
         </div>
         <div className="grid justify-center gap-4 mx-auto md:w-full lg:grid-cols-3">
-          {featuredExperiences.map((exp) => (
-            <ProjectCard key={exp.id} project={exp} />
+          {featuredProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
           ))}
         </div>
-        <Link href="/experience" className="flex justify-center">
+        <Link href="/project" className="flex justify-center">
           <Button variant={"outline"} className="rounded-xl">
             <Icons.chevronDown className="w-4 h-4 mr-2" /> View All
           </Button>
         </Link>
         <div className="mx-auto text-center md:max-w-[58rem]">
                     <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                        See all the relevant experiences.
+                        See all the relevant Projects.
                     </p>
                 </div> 
       </section>
-      <section
+      {/* <section
         id="contributions"
         className="container py-10 space-y-6 bg-slate-50 dark:bg-transparent my-14"
       >
@@ -171,7 +173,7 @@ export default async function IndexPage() {
           </p>
         </div>
         <div className="justify-center gap-4 mx-auto md:w-full lg:grid-cols-3">
-          <ContributionCard contributions={featuredContributions} />
+          <ContributionCard contributions={featuredProjects} />
         </div>
         <Link href="/contributions" className="flex justify-center">
           <Button variant={"outline"} className="rounded-xl">

@@ -35,6 +35,7 @@ export type ValidExpType = "Personal Project" | "Professional";
 export type ValidPages =
   | "home"
   | "skills"
+  | "projects"
   | "experience"
   | "contact"
   | "contributions"

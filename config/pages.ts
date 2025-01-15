@@ -30,6 +30,14 @@ export const pagesConfig: PagesConfig = {
         "Swapnil Mahadik key skills that define his professional identity.",
     },
   },
+  projects: {
+    title: "Projects",
+    description: "Highlighting impactful projects.",
+    metadata: {
+      title: "Projects",
+      description: "Swapnil Mahadik experience in building web applications.",
+    },
+  },
   experience: {
     title: "Experience",
     description: "Highlighting career journey and impactful projects.",
