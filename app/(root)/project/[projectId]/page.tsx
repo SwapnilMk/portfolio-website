@@ -81,7 +81,7 @@ export default function Project({ params }: ProjectPageProps) {
             />
 
             <div className="flex-1 leading-tight text-left">
-              <p className="font-medium">{"Naman Barkiya"}</p>
+              <p className="font-medium">{"Swapnil Mahadik"}</p>
               <p className="text-[12px] text-muted-foreground">
                 @{siteConfig.username}
               </p>
