@@ -47,13 +47,13 @@ export const Projects: ProjectInterface[] = [
     ],
     startDate: new Date("2021-07-01"),
     endDate: new Date("2022-07-01"),
-    companyLogoImg: "/experience/builtdesign/logo.png",
+    companyLogoImg: "/projects/techtea/home.webp",
     pagesInfoArr: [
       {
         title: "Landing Page",
         description: "test description",
         imgArr: [
-          "/experience/builtdesign/landing_1.webp",
+          "/projects/techtea/home.webp",
           "/experience/builtdesign/landing_3.webp",
           "/experience/builtdesign/landing_5.webp",
           "/experience/builtdesign/landing_6.webp",
@@ -107,7 +107,7 @@ export const Projects: ProjectInterface[] = [
     techStack: ["React", "Node.js", "MongoDB", "Javascript", "Typescript", "Tailwind CSS"],
     startDate: new Date("2021-07-01"),
     endDate: new Date("2022-07-01"), 
-    companyLogoImg: "/experience/superquotes/logo.png",
+    companyLogoImg: "/projects/bppindia/home.webp",
     pagesInfoArr: [
       {
         title: "Quotes View Page",
