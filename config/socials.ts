@@ -1,4 +1,4 @@
-import { Icons } from "@/components/common/icons";
+import { Icons } from '@/components/common/icons';
 
 interface SocialInterface {
   name: string;
@@ -9,27 +9,27 @@ interface SocialInterface {
 
 export const SocialLinks: SocialInterface[] = [
   {
-    name: "Github",
-    username: "@SwapnilMk",
+    name: 'Github',
+    username: '@SwapnilMk',
     icon: Icons.gitHub,
-    link: "https://github.com/SwapnilMk",
+    link: 'https://github.com/SwapnilMk'
   },
   {
-    name: "LinkedIn",
-    username: "Swapnil Mahadik",
+    name: 'LinkedIn',
+    username: 'Swapnil Mahadik',
     icon: Icons.linkedin,
-    link: "https://www.linkedin.com/in/swapnilmk/",
+    link: 'https://www.linkedin.com/in/swapnilmk/'
   },
   {
-    name: "Twitter",
-    username: "@Swapy_mk",
+    name: 'Twitter',
+    username: '@Swapy_mk',
     icon: Icons.twitter,
-    link: "https://x.com/Swapy_mk",
+    link: 'https://x.com/Swapy_mk'
   },
   {
-    name: "Gmail",
-    username: "mswapnil218",
+    name: 'Gmail',
+    username: 'mswapnil218',
     icon: Icons.gmail,
-    link: "mailto:mswapnil218@gmail.com",
-  },
+    link: 'mailto:mswapnil218@gmail.com'
+  }
 ];

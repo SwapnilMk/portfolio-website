@@ -1,12 +1,12 @@
-import { Metadata } from "next";
+import { Metadata } from 'next';
 
-import PageContainer from "@/components/common/page-container";
-import { ContactForm } from "@/components/forms/contact-form";
-import { pagesConfig } from "@/config/pages";
+import PageContainer from '@/components/common/page-container';
+import { ContactForm } from '@/components/forms/contact-form';
+import { pagesConfig } from '@/config/pages';
 
 export const metadata: Metadata = {
   title: pagesConfig.contact.metadata.title,
-  description: pagesConfig.contact.metadata.description,
+  description: pagesConfig.contact.metadata.description
 };
 
 export default function ContactPage() {
@@ -15,12 +15,11 @@ export default function ContactPage() {
       title={pagesConfig.contact.title}
       description={pagesConfig.contact.description}
     >
-      <div className="flex flex-col lg:flex-row">
-        <div className="flex-1">
+      <div className='flex flex-col lg:flex-row'>
+        <div className='flex-1'>
           <ContactForm />
         </div>
-        <div className="flex justify-center flex-1 ">
-        </div>
+        <div className='flex flex-1 justify-center'></div>
       </div>
     </PageContainer>
   );

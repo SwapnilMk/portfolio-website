@@ -1,10 +1,10 @@
-import { NextResponse } from "next/server";
+import { NextResponse } from 'next/server';
 
 export async function POST(req: Request) {
   const formLink = process.env.GOOGLE_FORM_LINK;
   if (!formLink) {
-    return new NextResponse("Please configure the env variables", {
-      status: 500,
+    return new NextResponse('Please configure the env variables', {
+      status: 500
     });
   }
 
@@ -22,9 +22,9 @@ export async function POST(req: Request) {
       `${formLink}/formResponse?${fieldIdName}=${name}&${fieldIdEmail}=${email}&${fieldIdMessage}=${message}&${fieldIdSocial}=${social}`
     );
 
-    return NextResponse.json("Success!");
+    return NextResponse.json('Success!');
   } catch (error) {
     console.log(error);
-    return new NextResponse("Internal error", { status: 500 });
+    return new NextResponse('Internal error', { status: 500 });
   }
 }

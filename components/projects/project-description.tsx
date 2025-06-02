@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const ProjectDescription: React.FC<{
   paragraphs: string[];
@@ -7,11 +7,11 @@ const ProjectDescription: React.FC<{
   return (
     <div>
       {paragraphs.map((paragraph, index) => (
-        <p className="mb-4" key={index}>
+        <p className='mb-4' key={index}>
           {paragraph}
         </p>
       ))}
-      <ul className="pl-6 mt-4 list-disc">
+      <ul className='mt-4 list-disc pl-6'>
         {bullets.map((bullet, index) => (
           <li key={index}>{bullet}</li>
         ))}

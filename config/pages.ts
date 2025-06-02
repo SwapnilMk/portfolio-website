@@ -1,4 +1,4 @@
-import { ValidPages } from "./constants";
+import { ValidPages } from './constants';
 
 type PagesConfig = {
   [key in ValidPages]: {
@@ -14,61 +14,61 @@ type PagesConfig = {
 
 export const pagesConfig: PagesConfig = {
   home: {
-    title: "Home",
-    description: "Welcome to my portfolio website.",
+    title: 'Home',
+    description: 'Welcome to my portfolio website.',
     metadata: {
-      title: "Home",
-      description: "Swapnil Mahadik portfolio website.",
-    },
+      title: 'Home',
+      description: 'Swapnil Mahadik portfolio website.'
+    }
   },
   skills: {
-    title: "Skills",
-    description: "Key skills that define my professional identity.",
+    title: 'Skills',
+    description: 'Key skills that define my professional identity.',
     metadata: {
-      title: "Skills",
+      title: 'Skills',
       description:
-        "Swapnil Mahadik key skills that define his professional identity.",
-    },
+        'Swapnil Mahadik key skills that define his professional identity.'
+    }
   },
   projects: {
-    title: "Projects",
-    description: "Highlighting impactful projects.",
+    title: 'Projects',
+    description: 'Highlighting impactful projects.',
     metadata: {
-      title: "Projects",
-      description: "Swapnil Mahadik experience in building web applications.",
-    },
+      title: 'Projects',
+      description: 'Swapnil Mahadik experience in building web applications.'
+    }
   },
   experience: {
-    title: "Experience",
-    description: "Highlighting career journey and impactful projects.",
+    title: 'Experience',
+    description: 'Highlighting career journey and impactful projects.',
     metadata: {
-      title: "Experience",
-      description: "Swapnil Mahadik experience in building web applications.",
-    },
+      title: 'Experience',
+      description: 'Swapnil Mahadik experience in building web applications.'
+    }
   },
   contact: {
-    title: "Contact",
+    title: 'Contact',
     description: "Let's connect and explore collaborations.",
     metadata: {
-      title: "Contact",
-      description: "Contact Swapnil Mahadik.",
-    },
+      title: 'Contact',
+      description: 'Contact Swapnil Mahadik.'
+    }
   },
   contributions: {
-    title: "Contributions",
-    description: "Open-source contributions and community involvement.",
+    title: 'Contributions',
+    description: 'Open-source contributions and community involvement.',
     metadata: {
-      title: "Contributions",
+      title: 'Contributions',
       description:
-        "Swapnil Mahadik open-source contributions and community involvement.",
-    },
+        'Swapnil Mahadik open-source contributions and community involvement.'
+    }
   },
   resume: {
-    title: "Resume",
-    description: "Swapnil Mahadik resume.",
+    title: 'Resume',
+    description: 'Swapnil Mahadik resume.',
     metadata: {
-      title: "Resume",
-      description: "Swapnil Mahadik resume.",
-    },
-  },
+      title: 'Resume',
+      description: 'Swapnil Mahadik resume.'
+    }
+  }
 };

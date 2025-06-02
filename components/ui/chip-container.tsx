@@ -1,4 +1,4 @@
-import Chip from "./chip";
+import Chip from './chip';
 
 interface ChipContainerProps {
   textArr: string[];
@@ -6,7 +6,7 @@ interface ChipContainerProps {
 
 export default function ChipContainer({ textArr }: ChipContainerProps) {
   return (
-    <div className="flex my-3 gap-2 flex-wrap">
+    <div className='my-3 flex flex-wrap gap-2'>
       {textArr.map((it, ind) => (
         <Chip key={ind} content={it} />
       ))}

@@ -93,8 +93,8 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings:
-      "rlig" 1,
-      "calt" 1;
+      'rlig' 1,
+      'calt' 1;
   }
 }
 
@@ -137,7 +137,7 @@
 } */
 
 .card:after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 0;
