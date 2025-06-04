@@ -18,8 +18,6 @@ interface ProjectPageProps {
   };
 }
 
-const githubUsername = 'SwapnilMk';
-
 export default function Project({ params }: ProjectPageProps) {
   let project = Projects.find((val) => val.id === params.projectId);
   if (!project) {

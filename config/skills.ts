@@ -156,6 +156,13 @@ export const skillsUnsorted: skillsInterface[] = [
     icon: Icons.git
   },
   {
+    name: 'GitHub',
+    description:
+      'Platform for hosting and collaborating on code repositories with powerful features for version control and project management.',
+    rating: 5,
+    icon: Icons.gitHub
+  },
+  {
     name: 'Docker',
     description:
       'Automate the deployment of applications inside lightweight, portable containers.',
@@ -300,6 +307,126 @@ export const skillsUnsorted: skillsInterface[] = [
     description: 'A simple and fast static site generator.',
     rating: 3,
     icon: Icons.bun
+  },
+  {
+    name: 'Prisma ORM',
+    description: 'Modern database toolkit and ORM for Node.js and TypeScript with type safety and auto-completion.',
+    rating: 4,
+    icon: Icons.prisma
+  },
+  {
+    name: 'Framer Motion',
+    description: 'Production-ready motion library for React that makes creating animations simple and powerful.',
+    rating: 4,
+    icon: Icons.framer
+  },
+  {
+    name: 'Shadcn UI',
+    description: 'Re-usable components built with Radix UI and Tailwind CSS for building beautiful user interfaces.',
+    rating: 4,
+    icon: Icons.shadcn
+  },
+  {
+    name: 'Vite',
+    description: 'Next generation frontend tooling that offers a faster and leaner development experience.',
+    rating: 5,
+    icon: Icons.vite
+  },
+  {
+    name: 'React Router',
+    description: 'Declarative routing for React applications with powerful features for navigation and routing.',
+    rating: 5,
+    icon: Icons.reactrouter
+  },
+  {
+    name: 'TanStack Router',
+    description: 'Type-safe routing for React applications with powerful features and excellent developer experience.',
+    rating: 4,
+    icon: Icons.tanstack
+  },
+  {
+    name: 'Recharts',
+    description: 'Composable charting library built on React components for creating beautiful and responsive charts.',
+    rating: 4,
+    icon: Icons.recharts
+  },
+  {
+    name: 'Bull Queue',
+    description: 'Fast, robust and reliable Redis-based queue for Node.js with advanced features for job processing.',
+    rating: 4,
+    icon: Icons.bull
+  },
+  {
+    name: 'Passport.js',
+    description: 'Simple, unobtrusive authentication middleware for Node.js with support for various authentication strategies.',
+    rating: 4,
+    icon: Icons.passport
+  },
+  {
+    name: 'JWT',
+    description: 'JSON Web Tokens for secure transmission of information between parties as a JSON object.',
+    rating: 5,
+    icon: Icons.jwt
+  },
+  {
+    name: 'AWS SES',
+    description: 'Amazon Simple Email Service for sending transactional emails and marketing messages.',
+    rating: 4,
+    icon: Icons.amazonaws
+  },
+  {
+    name: 'AWS SNS',
+    description: 'Amazon Simple Notification Service for sending notifications and alerts across multiple platforms.',
+    rating: 4,
+    icon: Icons.amazonaws
+  },
+  {
+    name: 'AWS S3',
+    description: 'Amazon Simple Storage Service for scalable object storage in the cloud.',
+    rating: 5,
+    icon: Icons.amazonaws
+  },
+  {
+    name: 'Angular',
+    description: 'Build scalable web applications with a comprehensive framework for building user interfaces.',
+    rating: 3,
+    icon: Icons.angular
+  },
+  {
+    name: 'GraphQL',
+    description: 'Query language for APIs that provides a more efficient, powerful and flexible alternative to REST.',
+    rating: 4,
+    icon: Icons.graphql
+  },
+  {
+    name: 'NPM',
+    description: 'Package manager for JavaScript, making it easy to share and reuse code.',
+    rating: 5,
+    icon: Icons.npm
+  },
+  {
+    name: 'Webpack',
+    description: 'Module bundler that transforms and bundles JavaScript modules for production.',
+    rating: 4,
+    icon: Icons.webpack
+  },
+  {
+    name: 'Cypress',
+    description: 'Modern web testing framework for end-to-end testing of web applications.',
+    rating: 4,
+    icon: Icons.cypress
+  },
+  {
+    name: 'Selenium',
+    description: 'Powerful tool for automating web browsers for testing purposes.',
+    rating: 3,
+    icon: Icons.selenium
+  },
+  {
+    name: 'Puppeteer',
+    description: 'Node.js library that provides a high-level API to control Chrome or Chromium.',
+    rating: 3,
+    icon: Icons.puppeteer
   }
 ];
 

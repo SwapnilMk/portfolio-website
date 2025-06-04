@@ -1,8 +1,6 @@
 export type ValidSkills =
   | 'Next.js'
   | 'React'
-  | 'GraphQL'
-  | 'Nest.js'
   | 'express.js'
   | 'Node.js'
   | 'MongoDB'
@@ -10,8 +8,12 @@ export type ValidSkills =
   | 'Javascript'
   | 'HTML 5'
   | 'CSS 3'
-  | 'React Native'
-  | 'Angular'
+  | 'Next.js 14'
+  | 'Prisma ORM'
+  | 'Redux Toolkit'
+  | 'React Router Dom'
+  | 'Framer Motion'
+  | 'Shadcn UI'
   | 'Redux'
   | 'Socket.io'
   | 'Material UI'
@@ -19,16 +21,38 @@ export type ValidSkills =
   | 'AWS'
   | 'Bootstrap'
   | 'Google Auth'
-  | 'MySQL';
+  | 'MySQL'
+  | 'Docker'
+  | 'Kubernetes'
+  | 'Git'
+  | 'GitHub'
+  | 'CI/CD'
+  | 'Vercel'
+  | 'Vite'
+  | 'PHP'
+  | 'WordPress'
+  | 'Redux Toolkit'
+  | 'TanStack Router'
+  | 'Recharts'
+  | 'Express.js'
+  | 'Redis'
+  | 'Socket.IO'
+  | 'AWS S3'
+  | 'AWS SES'
+  | 'AWS SNS'
+  | 'Bull Queue'
+  | 'JWT'
+  | 'Passport.js';
 
 export type ValidCategory =
   | 'Full Stack'
+  | 'E-commerce'
   | 'Frontend'
+  | 'Frontend Dev'
   | 'Backend'
   | 'UI/UX'
   | 'Web Dev'
-  | 'Mobile Dev'
-  | '3D Modeling';
+  | 'Web Development';
 
 export type ValidExpType = 'Personal Project' | 'Professional';
 
