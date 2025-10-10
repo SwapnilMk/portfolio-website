@@ -99,12 +99,7 @@ import {
   SiWordpress,
   SiYarn
 } from 'react-icons/si';
-import {
-  SiPrisma,
-  SiFramer,
-  SiVite,
-  SiReactrouter
-} from 'react-icons/si';
+import { SiPrisma, SiFramer, SiVite, SiReactrouter } from 'react-icons/si';
 import { FaBullhorn } from 'react-icons/fa';
 import { BiLayer } from 'react-icons/bi';
 import { RiLockPasswordLine } from 'react-icons/ri';
@@ -220,5 +215,5 @@ export const Icons = {
   bull: FaBullhorn,
   passport: RiLockPasswordLine,
   jwt: BsShieldLock,
-  shadcn: BiLayer,
+  shadcn: BiLayer
 };
