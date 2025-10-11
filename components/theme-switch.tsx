@@ -31,7 +31,7 @@ const ThemeSwitch = ({
     <div
       className={cn(
         'relative flex items-center justify-center',
-        'h-9 w-20', 
+        'h-9 w-20',
         className
       )}
       {...props}
@@ -44,7 +44,7 @@ const ThemeSwitch = ({
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2',
           '[&>span]:z-10 [&>span]:h-7 [&>span]:w-7 [&>span]:rounded-full [&>span]:bg-background [&>span]:shadow',
           'data-[state=unchecked]:[&>span]:translate-x-1',
-          'data-[state=checked]:[&>span]:translate-x-[44px]' 
+          'data-[state=checked]:[&>span]:translate-x-[44px]'
         )}
       />
 

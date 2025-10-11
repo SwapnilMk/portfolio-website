@@ -9,8 +9,13 @@
     "baseColor": "zinc",
     "cssVariables": true
   },
+  "iconLibrary": "lucide",
   "aliases": {
     "components": "@/components",
     "utils": "@/lib/utils"
+  },
+  "registries": {
+    "@magicui": "https://magicui.design/r/{name}.json",
+    "@svgl": "https://svgl.app/r/{name}.json"
   }
 }
