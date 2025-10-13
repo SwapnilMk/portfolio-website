@@ -9,7 +9,8 @@
     "lint": "next lint",
     "format": "prettier --write .",
     "format:check": "prettier -c -w .",
-    "format:fix": "prettier --write --fix ."
+    "format:fix": "prettier --write --fix .",
+    "knip": "knip"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.2.0",
@@ -26,7 +27,6 @@
     "@radix-ui/react-tooltip": "^1.0.6",
     "@sendgrid/mail": "^8.1.6",
     "@tailwindcss/line-clamp": "^0.4.4",
-    "@types/node": "20.4.5",
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
     "@vercel/analytics": "^1.0.2",
@@ -53,14 +53,16 @@
     "tailwindcss": "3.3.3",
     "tailwindcss-animate": "^1.0.6",
     "types": "^0.1.1",
-    "typescript": "5.1.6",
     "zod": "^3.21.4",
     "zustand": "^4.4.1"
   },
   "devDependencies": {
+    "@types/node": "^24.7.2",
     "@types/nodemailer": "^6.4.9",
+    "knip": "^5.64.3",
     "prettier": "^3.3.3",
-    "prettier-plugin-organize-imports": "^4.1.0"
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "typescript": "^5.9.3"
   },
   "overrides": {
     "react-is": "^19.0.0-rc-69d4b800-20241021"
