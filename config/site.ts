@@ -2,14 +2,32 @@ export const siteConfig = {
   name: 'Swapnil Mahadik Portfolio',
   authorName: 'Swapnil Mahadik',
   username: 'swapnilMk',
-  description:
-    'Swapnil Mahadik is a Full Stack Developer, who loves to build web applications and is passionate about learning new technologies.',
-  url: 'https://swapnil-portfolioweb.netlify.app/',
+  role: [
+    'Full Stack Developer',
+    'Frontend Developer',
+    'Backend Developer',
+    'UI/UX Designer',
+    'Web Engineer',
+    'Software Developer',
+    'Creative Coder',
+    'Technical Lead',
+    'DevOps Specialist',
+    'SEO Expert'
+  ],
+  heading: 'Passionate about creating impactful web experiences',
+  description: `With over 2 years of experience in full-stack development, I specialize in building scalable web applications using modern technologies. My expertise includes React, Next js, Node.js, and cloud architecture. I'm passionate about creating elegant solutions to complex problems and sharing knowledge with the developer community.`,
+  url: 'https://swapnil-portfolioweb.vercel.app/',
   links: {
     twitter: 'https://x.com/Swapy_mk',
-    github: 'https://github.com/SwapnilMk'
+    github: 'https://github.com/SwapnilMk',
+    linkedin: 'https://www.linkedin.com/in/swapnilmk/',
+    instagram: 'https://www.instagram.com/swapyy_mk/',
+    facebook: 'https://www.facebook.com/swapmahadik',
+    whatsapp: 'https://wa.me/+917057332679',
+    email: 'mailto:mswapnil218@gmail.com'
   },
-  ogImage: 'https://swapnil-portfolioweb.netlify.app/',
+  cv: '/resume.pdf',
+  ogImage: 'https://swapnil-portfolioweb.vercel.app/',
   iconIco:
     'https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357384/assets/naman-favicon.ico',
   logoIcon:
