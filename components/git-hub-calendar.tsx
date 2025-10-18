@@ -33,9 +33,7 @@ const GitHubCalendar = ({
 
   // Process data prop
   useEffect(() => {
-    setContributions(
-      data.map((item) => ({ ...item }))
-    );
+    setContributions(data.map((item) => ({ ...item })));
   }, [data]);
 
   // Get color based on contribution count

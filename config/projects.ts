@@ -299,6 +299,105 @@ export const Projects: ProjectInterface[] = [
         'Created a state directory system for managing party organizational structure across different regions'
       ]
     }
+  },
+  {
+    id: 'expense-tracker',
+    companyName: 'Expense Tracker',
+    type: 'Personal Project',
+    category: ['Web Dev', 'Full Stack', 'UI/UX'],
+    shortDescription:
+      'A full-stack expense tracker application built with the MERN stack that allows users to add, view, and manage income and expenses with visual analytics and category filters.',
+    websiteLink: 'https://swap-expense-tracker.vercel.app/',
+    githubLink: 'https://github.com/SwapnilMk/expense-tracker',
+    techStack: [
+      'React',
+      'Vite',
+      'Redux Toolkit',
+      'Material UI',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'React Router Dom'
+    ],
+    startDate: new Date('2024-04-01'),
+    endDate: new Date('2024-06-01'),
+    companyLogoImg: '/projects/expense-tracker/overview.webp',
+    pagesInfoArr: [
+      {
+        title: 'Dashboard Overview',
+        description:
+          'Interactive dashboard displaying total income, expenses, and visual charts representing financial data.',
+        imgArr: [
+          '/projects/expense-tracker/overview.webp',
+          '/projects/expense-tracker/overview_dark.webp'
+        ]
+      },
+      {
+        title: 'Transaction History',
+        description:
+          'Displays all user transactions with filtering and sorting options for type, category, and date.',
+        imgArr: ['/projects/expense-tracker/history.webp']
+      },
+      {
+        title: 'Add Transaction',
+        description:
+          'Simple and intuitive interface to add new transactions with validation and error handling.',
+        imgArr: ['/projects/expense-tracker/add_transaction.webp']
+      }
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        'The Expense Tracker App is a full-stack financial management tool that enables users to track their income and expenses efficiently. It includes CRUD operations, filtering, and interactive charts for data visualization.',
+        'The frontend is built using React, Vite, and Material-UI (MUI), while the backend is powered by Node.js, Express, and MongoDB. State management is handled with Redux Toolkit, ensuring smooth and responsive interactions.'
+      ],
+      bullets: [
+        'Built a full-stack MERN application for managing income and expenses',
+        'Implemented CRUD operations with input validation and error handling',
+        'Integrated Redux Toolkit for global state management',
+        'Used MUI X Charts for interactive data visualization',
+        'Developed RESTful APIs with Express and MongoDB (Mongoose)',
+        'Added transaction filtering by type, category, and date',
+        'Implemented responsive UI using Material-UI components',
+        'Configured Winston logger for backend monitoring and error tracking',
+        'Deployed on Vercel with environment-based configurations'
+      ]
+    }
+  },
+  {
+    id: 'econs-exim-gateway',
+    companyName: 'EGC India (Econs Exim Gateway)',
+    type: 'Professional',
+    category: ['Web Dev', 'UI/UX'],
+    shortDescription:
+      "Official website of EGC India (Econs Gateway Commercial Services Pvt. Ltd.) — a modern, responsive single-page application built with React, Vite, and TypeScript. It showcases the company's dual focus on global commercial services and innovative technology platforms.",
+    websiteLink: 'https://econs-exim-gateway.vercel.app/',
+    techStack: ['React', 'Vite', 'Tailwind CSS', 'Shadcn UI', 'Framer Motion'],
+    startDate: new Date('2025-01-01'),
+    endDate: new Date('2025-03-01'),
+    companyLogoImg: '/projects/econs/dashboard.png',
+    pagesInfoArr: [
+      {
+        title: 'Landing Page',
+        description:
+          'A responsive landing page introducing EGC India’s mission and services, featuring smooth animations and modern layouts.',
+        imgArr: ['/projects/econs/dashboard.png']
+      }
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        'This repository contains the source code for the official website of EGC India (Econs Gateway Commercial Services Pvt. Ltd.). The website is a modern, responsive single-page application built with React, Vite, and TypeScript. It showcases the company’s dual focus on global commercial services and innovative technology platforms.',
+        'EGC India is a technology-driven company that provides comprehensive solutions in two main areas: Commercial Services and IT & Technology. The website serves as the primary digital presence for EGC India, offering information about services, platforms, partners, and company vision.'
+      ],
+      bullets: [
+        'Developed a responsive corporate website using React, TypeScript, and Tailwind CSS',
+        'Implemented Framer Motion for smooth animations and engaging UI transitions',
+        'Built reusable components using Shadcn UI for design consistency',
+        'Integrated React Hook Form and Zod for robust form validation',
+        'Configured Vite for optimized builds and fast HMR during development',
+        'Structured project with scalable directories for assets, components, layouts, and routes',
+        'Ensured clean code practices with ESLint and Prettier setup'
+      ]
+    }
   }
 ];
 

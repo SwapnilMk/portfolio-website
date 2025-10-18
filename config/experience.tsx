@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const experience = [
   {
     title: '2025',
@@ -28,16 +30,20 @@ export const experience = [
           </li>
         </ul>
 
-        <div className='grid grid-cols-2 gap-4'>
-          <img
+        <div className='mt-4 grid grid-cols-3 gap-4'>
+          <Image
             src='/experience/eplatform.png'
             alt='AECCI e-platform'
-            className='h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60'
+            width={150}
+            height={150}
+            className='h-40 w-auto rounded-lg object-cover shadow-md md:h-44 lg:h-60'
           />
-          <img
-            src='/experience/aecciwebsite.png'
+          <Image
+            src='/experience/aeccilogo.png'
             alt='AECCI dashboard'
-            className='h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60'
+            width={150}
+            height={150}
+            className='h-40 w-auto rounded-lg object-cover shadow-md md:h-44 lg:h-60'
           />
         </div>
       </div>
@@ -67,6 +73,15 @@ export const experience = [
             improvements.
           </li>
         </ul>
+        <div className='mt-4 grid grid-cols-3 gap-4'>
+          <Image
+            src='/experience/zencommerce.png'
+            alt='AECCI e-platform'
+            width={150}
+            height={150}
+            className='h-40 w-auto rounded-lg object-cover shadow-md md:h-44 lg:h-60'
+          />
+        </div>
       </div>
     )
   },
@@ -98,16 +113,20 @@ export const experience = [
           2015 | Maharashtra, India
         </p>
 
-        <div className='grid grid-cols-3 gap-4'>
-          <img
+        <div className='mt-4 grid grid-cols-3 gap-4'>
+          <Image
             src='/experience/campus.png'
             alt='Pillai College Rasayani'
-            className='h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60'
+            width={150}
+            height={150}
+            className='h-40 w-auto rounded-lg object-cover shadow-md md:h-44 lg:h-60'
           />
-          <img
+          <Image
             src='/experience/pillai.png'
             alt='MES campus'
-            className='h-20 w-full rounded-lg object-cover shadow-md md:h-44 lg:h-60'
+            width={150}
+            height={150}
+            className='h-40 w-auto rounded-lg object-cover shadow-md md:h-44 lg:h-60'
           />
         </div>
       </div>

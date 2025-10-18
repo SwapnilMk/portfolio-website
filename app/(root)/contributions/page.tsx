@@ -166,7 +166,7 @@ export default function ContributionsPage() {
           contributors: contributors.map((contributor) => ({
             login: contributor.login,
             avatar_url: contributor.avatar_url
-          })),
+          }))
           // forks: repoDetails?.forks_count || 0,
           // language: repoDetails?.language || 'TypeScript',
           // topics: repoDetails?.topics || []
