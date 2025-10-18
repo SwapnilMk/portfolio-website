@@ -27,9 +27,21 @@ export const SocialLinks: SocialInterface[] = [
     link: 'https://x.com/Swapy_mk'
   },
   {
+    name: 'Instagram',
+    username: '@Swapyy_mk',
+    icon: Icons.instagram,
+    link: 'https://www.instagram.com/swapyy_mk/'
+  },
+  {
     name: 'Gmail',
     username: 'mswapnil218',
     icon: Icons.gmail,
     link: 'mailto:mswapnil218@gmail.com'
+  },
+  {
+    name: 'facebook',
+    username: '@swapmahadik',
+    icon: Icons.facebook,
+    link: 'https://www.facebook.com/swapmahadik'
   }
 ];

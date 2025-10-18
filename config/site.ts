@@ -12,26 +12,40 @@ export const siteConfig = {
     'Creative Coder',
     'Technical Lead',
     'DevOps Specialist',
-    'SEO Expert'
+    'SEO Expert',
+    'Accessibility Advocate',
+    'Performance Engineer',
+    'Cloud Architect',
+    'API Designer',
+    'Component Library Author',
+    'Mentor & Speaker',
+    'Open Source Contributor',
+    'Test Automation Engineer',
+    'System Reliability Engineer',
+    'Product-focused Engineer'
   ],
-  heading: 'Passionate about creating impactful web experiences',
-  description: `With over 2 years of experience in full-stack development, I specialize in building scalable web applications using modern technologies. My expertise includes React, Next js, Node.js, and cloud architecture. I'm passionate about creating elegant solutions to complex problems and sharing knowledge with the developer community.`,
+  heading: `Passionate about creating 
+            impactful web experiences`,
+  description: `With over 2 years of experience in full-stack development, I design and build scalable, maintainable web applications using modern technologies and best practices.
+  
+  I focus on delivering great user experiences by combining strong frontend engineering (React, Next.js, TypeScript) with robust backend solutions (Node.js, REST/GraphQL), cloud deployments, and CI/CD automation. I enjoy tackling performance and accessibility challenges and mentoring other developers.
+
+  Outside of hands-on coding, I contribute to open source, write technical articles, and speak at community meetups to share practical lessons and patterns for building production-ready web apps.`,
   url: 'https://swapnil-portfolioweb.vercel.app/',
-  links: {
-    twitter: 'https://x.com/Swapy_mk',
-    github: 'https://github.com/SwapnilMk',
-    linkedin: 'https://www.linkedin.com/in/swapnilmk/',
-    instagram: 'https://www.instagram.com/swapyy_mk/',
-    facebook: 'https://www.facebook.com/swapmahadik',
-    whatsapp: 'https://wa.me/+917057332679',
-    email: 'mailto:mswapnil218@gmail.com'
-  },
   cv: '/resume.pdf',
   ogImage: 'https://swapnil-portfolioweb.vercel.app/',
   iconIco:
     'https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357384/assets/naman-favicon.ico',
   logoIcon:
     'https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357294/assets/naman-logo.png',
+  location: 'Pune, India',
+  contactEmail: 'swapnil@example.com',
+  social: {
+    github: 'https://github.com/swapnilMk',
+    linkedin: 'https://www.linkedin.com/in/swapnil-mahadik',
+    twitter: 'https://twitter.com/swapnilMk',
+    dribbble: 'https://dribbble.com/swapnilMk'
+  },
   keywords: [
     'Swapnil Mahadik',
     'Swapnil Mahadik Portfolio',
@@ -41,14 +55,37 @@ export const siteConfig = {
     'Swapnil Mahadik Resume',
     'Next.js',
     'React',
+    'TypeScript',
     'Tailwind CSS',
     'Server Components',
     'Radix UI',
     'Shadcn',
     'Next SEO',
-    'Next Server Components',
-    'Next.js Portfolio',
-    'Next.js Blog',
-    'Next.js Starter'
+    'Node.js',
+    'Express',
+    'GraphQL',
+    'Prisma',
+    'Postgres',
+    'Docker',
+    'Kubernetes',
+    'AWS',
+    'Vercel',
+    'Performance Optimization',
+    'Accessibility',
+    'Web Architecture',
+    'Component Library',
+    'Open Source',
+    'Mentoring',
+    'Technical Writing',
+    'Frontend Engineer',
+    'Backend Engineer',
+    'Full Stack Developer',
+    'DevOps',
+    'CI/CD',
+    'SEO',
+    'UI/UX',
+    'Design Systems',
+    'Testing',
+    'Automation'
   ]
 };

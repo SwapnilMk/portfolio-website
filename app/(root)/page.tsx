@@ -19,6 +19,103 @@ import { AuroraText } from '@/components/ui/aurora-text';
 import StarOnGithub from '@/components/features/github-button';
 import DownloadCV from '@/components/features/download-button';
 import { SocialButton } from '@/components/features/social-button';
+import { Timeline } from '@/components/ui/timeline';
+import { experience } from '@/config/experience';
+
+export const products = [
+  {
+    title: 'Moonbeam',
+    link: 'https://gomoonbeam.com',
+    thumbnail:
+      'https://aceternity.com/images/products/thumbnails/new/moonbeam.png'
+  },
+  {
+    title: 'Cursor',
+    link: 'https://cursor.so',
+    thumbnail:
+      'https://aceternity.com/images/products/thumbnails/new/cursor.png'
+  },
+  {
+    title: 'Rogue',
+    link: 'https://userogue.com',
+    thumbnail: 'https://aceternity.com/images/products/thumbnails/new/rogue.png'
+  },
+
+  {
+    title: 'Editorially',
+    link: 'https://editorially.org',
+    thumbnail:
+      'https://aceternity.com/images/products/thumbnails/new/editorially.png'
+  },
+  {
+    title: 'Editrix AI',
+    link: 'https://editrix.ai',
+    thumbnail:
+      'https://aceternity.com/images/products/thumbnails/new/editrix.png'
+  },
+  {
+    title: 'Pixel Perfect',
+    link: 'https://app.pixelperfect.quest',
+    thumbnail:
+      'https://aceternity.com/images/products/thumbnails/new/pixelperfect.png'
+  },
+
+  {
+    title: 'Algochurn',
+    link: 'https://algochurn.com',
+    thumbnail:
+      'https://aceternity.com/images/products/thumbnails/new/algochurn.png'
+  },
+  {
+    title: 'Aceternity UI',
+    link: 'https://ui.aceternity.com',
+    thumbnail:
+      'https://aceternity.com/images/products/thumbnails/new/aceternityui.png'
+  },
+  {
+    title: 'Tailwind Master Kit',
+    link: 'https://tailwindmasterkit.com',
+    thumbnail:
+      'https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png'
+  },
+  {
+    title: 'SmartBridge',
+    link: 'https://smartbridgetech.com',
+    thumbnail:
+      'https://aceternity.com/images/products/thumbnails/new/smartbridge.png'
+  },
+  {
+    title: 'Renderwork Studio',
+    link: 'https://renderwork.studio',
+    thumbnail:
+      'https://aceternity.com/images/products/thumbnails/new/renderwork.png'
+  },
+
+  {
+    title: 'Creme Digital',
+    link: 'https://cremedigital.com',
+    thumbnail:
+      'https://aceternity.com/images/products/thumbnails/new/cremedigital.png'
+  },
+  {
+    title: 'Golden Bells Academy',
+    link: 'https://goldenbellsacademy.com',
+    thumbnail:
+      'https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png'
+  },
+  {
+    title: 'Invoker Labs',
+    link: 'https://invoker.lol',
+    thumbnail:
+      'https://aceternity.com/images/products/thumbnails/new/invoker.png'
+  },
+  {
+    title: 'E Free Invoice',
+    link: 'https://efreeinvoice.com',
+    thumbnail:
+      'https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png'
+  }
+];
 
 export const metadata: Metadata = {
   title: pagesConfig.home.metadata.title,
@@ -31,7 +128,7 @@ export default async function IndexPage() {
       <section className='px-auto relative flex min-h-screen items-center justify-center overflow-hidden'>
         <AnimatedGridPattern
           numSquares={30}
-          maxOpacity={0.1}
+          maxOpacity={0.5}
           duration={3}
           repeatDelay={1}
           className={cn(
@@ -41,7 +138,7 @@ export default async function IndexPage() {
         />
         <div className='relative z-[1] max-w-screen-md text-center'>
           <AnimatedShinyTextBadge />
-          <h1 className='text-4xl font-bold !leading-[1.2] tracking-tight sm:text-5xl md:text-6xl'>
+          <h1 className='mt-3 text-4xl font-bold !leading-[1.2] tracking-tight sm:text-5xl md:text-6xl'>
             Building Scalable & Engaging{' '}
             <AuroraText> Web Experiences</AuroraText>
           </h1>
@@ -61,9 +158,9 @@ export default async function IndexPage() {
       </section>
       <section
         id='about'
-        className='relative mx-auto flex max-w-5xl flex-col items-center justify-center overflow-hidden px-6 py-24 sm:py-32 md:py-40'
+        className='container space-y-6 bg-slate-50 py-10 dark:bg-transparent'
       >
-        <div className='flex flex-col items-center gap-12 md:flex-row-reverse md:items-start md:gap-16'>
+        <div className='mx-auto flex max-w-full flex-col items-center gap-12 md:flex-row-reverse md:items-start md:gap-16'>
           {/* Profile + Social Buttons */}
           <div className='flex flex-col items-center gap-6 md:items-start'>
             <ProfileImage className='hidden md:block' />
@@ -80,11 +177,11 @@ export default async function IndexPage() {
             <ProfileImage className='mx-auto mb-6 mt-2 block md:hidden' />
             <SocialButton className='mx-auto mb-6 mt-2 block space-x-2 md:hidden' />
 
-            <h2 className='mb-4 text-4xl font-bold tracking-tight sm:text-5xl'>
+            <h2 className='mb-4 text-4xl font-bold tracking-tight sm:text-5xl md:whitespace-pre-line'>
               {siteConfig.heading}
             </h2>
 
-            <p className='mb-6 text-justify leading-relaxed text-muted-foreground'>
+            <p className='mb-6 text-justify leading-snug text-muted-foreground md:whitespace-pre-line'>
               {siteConfig.description}
             </p>
 
@@ -95,6 +192,9 @@ export default async function IndexPage() {
           </div>
         </div>
       </section>
+      <div className='relative w-full overflow-clip'>
+        <Timeline data={experience} />
+      </div>
 
       <section
         id='skills'

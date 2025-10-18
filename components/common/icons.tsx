@@ -14,7 +14,6 @@ import {
   Image,
   Laptop,
   Loader2,
-  LucideProps,
   Menu,
   Moon,
   MoreVertical,
@@ -52,6 +51,7 @@ import {
   SiDocker,
   SiEslint,
   SiExpress,
+  SiFacebook,
   SiFigma,
   SiFirebase,
   SiFlask,
@@ -63,6 +63,7 @@ import {
   SiGooglecloud,
   SiGraphql,
   SiHtml5,
+  SiInstagram,
   SiIntellijidea,
   SiJavascript,
   SiJenkins,
@@ -96,6 +97,7 @@ import {
   SiVercel,
   SiVisualstudiocode,
   SiWebpack,
+  SiWhatsapp,
   SiWordpress,
   SiYarn
 } from 'react-icons/si';
@@ -160,9 +162,6 @@ export const Icons = {
   socketio: SiSocketdotio,
   tailwindcss: SiTailwindcss,
   typescript: SiTypescript,
-  gmail: SiGmail,
-  twitter: SiTwitter,
-  linkedin: SiLinkedin,
   userFill: BiSolidUser,
   work: HiBriefcase,
   python: SiPython,
@@ -215,5 +214,11 @@ export const Icons = {
   bull: FaBullhorn,
   passport: RiLockPasswordLine,
   jwt: BsShieldLock,
-  shadcn: BiLayer
+  shadcn: BiLayer,
+  gmail: SiGmail,
+  twitter: SiTwitter,
+  linkedin: SiLinkedin,
+  instagram: SiInstagram,
+  whatsapp: SiWhatsapp,
+  facebook: SiFacebook
 };

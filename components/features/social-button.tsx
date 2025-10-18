@@ -9,7 +9,7 @@ import { SocialLinks } from '@/config/socials';
 function SocialButton({ className, ...props }: HTMLAttributes<HTMLDivElement>) {
   return (
     <div className={cn('flex flex-wrap gap-2', className)} {...props}>
-      {SocialLinks.map((s) => {
+      {SocialLinks.slice(0, -1).map((s) => {
         const Icon = s.icon;
         return (
           <Button

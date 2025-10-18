@@ -17,10 +17,6 @@ export const routesConfig: any = {
       href: '/contributions'
     },
     {
-      title: 'Certifications',
-      href: '/certifications'
-    },
-    {
       title: 'Blog',
       href: '/blog'
     },
