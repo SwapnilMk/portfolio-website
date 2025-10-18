@@ -313,7 +313,7 @@ function OpenSource(props: OpenSourceProps) {
         <OpenSourceContent
           stars={props.defaultStats?.stars || 0}
           contributors={props.defaultStats?.contributors || []}
-          repository={props.repository}
+          // repository={props.repository}
           {...props}
         />
       }

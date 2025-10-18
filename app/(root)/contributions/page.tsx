@@ -167,9 +167,9 @@ export default function ContributionsPage() {
             login: contributor.login,
             avatar_url: contributor.avatar_url
           })),
-          forks: repoDetails?.forks_count || 0,
-          language: repoDetails?.language || 'TypeScript',
-          topics: repoDetails?.topics || []
+          // forks: repoDetails?.forks_count || 0,
+          // language: repoDetails?.language || 'TypeScript',
+          // topics: repoDetails?.topics || []
         }}
       />
 

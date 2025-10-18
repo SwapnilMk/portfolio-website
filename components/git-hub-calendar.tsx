@@ -34,7 +34,7 @@ const GitHubCalendar = ({
   // Process data prop
   useEffect(() => {
     setContributions(
-      data.map((item) => ({ ...item, date: new Date(item.date) }))
+      data.map((item) => ({ ...item }))
     );
   }, [data]);
 

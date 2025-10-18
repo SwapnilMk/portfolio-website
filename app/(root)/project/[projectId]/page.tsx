@@ -12,6 +12,7 @@ import { siteConfig } from '@/config/site';
 import { cn, formatDateFromObj } from '@/lib/utils';
 import swapnilImg from '@/public/swapnil-profile.png';
 import { TracingBeam } from '@/components/ui/tracing-beam';
+import { SocialLinks } from '@/config/socials';
 
 interface ProjectPageProps {
   params: {
@@ -67,7 +68,7 @@ export default function Project({ params }: ProjectPageProps) {
           <ChipContainer textArr={project.category} />
           <div className='mt-4 flex space-x-4'>
             <Link
-              href={siteConfig.links.github}
+              href={SocialLinks[0].link}
               className='flex items-center space-x-2 text-sm'
             >
               <Image
