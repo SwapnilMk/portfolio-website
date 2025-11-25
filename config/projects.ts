@@ -398,6 +398,181 @@ export const Projects: ProjectInterface[] = [
         'Ensured clean code practices with ESLint and Prettier setup'
       ]
     }
+  },
+  {
+    id: 'real-estate-management',
+    companyName: 'Real Estate Management System',
+    type: 'Personal Project',
+    category: ['Web Dev', 'Full Stack', 'UI/UX'],
+    shortDescription:
+      'A comprehensive web application for a real estate agency, built using the MERN stack (MongoDB, Express.js, React, Node.js). This application facilitates property management for agents and property discovery for clients, featuring secure authentication, real-time updates, and a responsive design.',
+    websiteLink: 'https://real-estate-management-web.vercel.app/',
+    githubLink:
+      'https://github.com/SwapnilMk/real-estate-management-system.git',
+    techStack: [
+      'React',
+      'Vite',
+      'Typescript',
+      'Redux Toolkit',
+      'Tailwind CSS',
+      'Shadcn UI',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'JWT'
+    ],
+    startDate: new Date('2024-11-01'),
+    endDate: new Date('2025-02-01'),
+    companyLogoImg: '/projects/real-estate-management/home.webp',
+    pagesInfoArr: [
+      {
+        title: 'Landing & Authentication',
+        description:
+          'A modern landing page with secure authentication options including login, sign-up, and password recovery.',
+        imgArr: [
+          '/projects/real-estate-management/home.webp',
+          '/projects/real-estate-management/about.webp',
+          '/projects/real-estate-management/contact.webp',
+          '/projects/real-estate-management/login.webp',
+          '/projects/real-estate-management/sign-up.webp',
+          '/projects/real-estate-management/forgot-password.webp'
+        ]
+      },
+      {
+        title: 'Property Discovery',
+        description:
+          'Advanced property search with map integration and detailed listings to help users find their perfect home.',
+        imgArr: [
+          '/projects/real-estate-management/listing.webp',
+          '/projects/real-estate-management/map-search.webp'
+        ]
+      },
+      {
+        title: 'Agent Dashboard & Management',
+        description:
+          'Comprehensive tools for agents to manage properties, view statistics, and handle inquiries.',
+        imgArr: [
+          '/projects/real-estate-management/agent-dashboard.webp',
+          '/projects/real-estate-management/overview.webp',
+          '/projects/real-estate-management/property-management.webp',
+          '/projects/real-estate-management/add-property.webp',
+          '/projects/real-estate-management/update-property.webp',
+          '/projects/real-estate-management/contact-dashboard.webp',
+          '/projects/real-estate-management/inquires-dashboard.webp',
+          '/projects/real-estate-management/user-management-dashboard.webp'
+        ]
+      },
+      {
+        title: 'User & Agent Features',
+        description:
+          'Dedicated profiles for users and agents, with features for managing inquiries and contact details.',
+        imgArr: [
+          '/projects/real-estate-management/profile.webp',
+          '/projects/real-estate-management/agent profile.webp',
+          '/projects/real-estate-management/agent-contact.webp',
+          '/projects/real-estate-management/inquires.webp'
+        ]
+      }
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        'A comprehensive web application for a real estate agency, built using the MERN stack (MongoDB, Express.js, React, Node.js). This application facilitates property management for agents and property discovery for clients, featuring secure authentication, real-time updates, and a responsive design.',
+        'The system is divided into two main portals: one for agents to manage listings and view insights, and another for clients to search for properties, manage their wishlist, and contact agents. It ensures a seamless experience for both parties with a focus on security and usability.'
+      ],
+      bullets: [
+        'Developed a full-stack real estate platform using the MERN stack (MongoDB, Express.js, React, Node.js)',
+        'Implemented secure authentication using JWT with refresh token rotation',
+        'Created a comprehensive agent dashboard for property management and client insights',
+        'Built an advanced property search system with filters for location, price, and type',
+        'Integrated Cloudinary for efficient image storage and management',
+        'Implemented responsive design using Tailwind CSS and Shadcn UI components',
+        'Utilized Redux Toolkit for efficient state management across the application',
+        'Integrated Nodemailer for email notifications and inquiries'
+      ]
+    }
+  },
+  {
+    id: 'vue-ecommerce-app',
+    companyName: 'Vue E-commerce App',
+    type: 'Personal Project',
+    category: ['Web Dev', 'Full Stack', 'UI/UX'],
+    shortDescription:
+      'A full-stack e-commerce web application built using Vue.js, Express.js, and MongoDB. Features include user authentication, product catalog, shopping cart, wishlist, and a comprehensive admin dashboard.',
+    websiteLink: 'https://ecommerce-app-vue.vercel.app/',
+    githubLink: 'https://github.com/SwapnilMk/vue-ecommerce-app',
+    techStack: [
+      'Vue.js',
+      'Vite',
+      'Typescript',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'JWT',
+      'Redux'
+    ],
+    startDate: new Date('2024-10-01'),
+    endDate: new Date('2024-11-15'),
+    companyLogoImg: '/projects/vue-ecommerce/homepage.webp',
+    pagesInfoArr: [
+      {
+        title: 'Home & Authentication',
+        description:
+          'A welcoming home page and secure authentication pages for user sign-in and sign-up.',
+        imgArr: [
+          '/projects/vue-ecommerce/homepage.webp',
+          '/projects/vue-ecommerce/signin.webp',
+          '/projects/vue-ecommerce/signup.webp'
+        ]
+      },
+      {
+        title: 'Shopping Experience',
+        description:
+          'Seamless shopping experience with detailed product pages, cart management, and wishlist functionality.',
+        imgArr: [
+          '/projects/vue-ecommerce/productDetailpage.webp',
+          '/projects/vue-ecommerce/cartPage.webp',
+          '/projects/vue-ecommerce/wishlistpage.webp'
+        ]
+      },
+      {
+        title: 'Admin Dashboard',
+        description:
+          'Comprehensive admin dashboard for managing products, orders, and viewing platform statistics.',
+        imgArr: [
+          '/projects/vue-ecommerce/adminDashboard.webp',
+          '/projects/vue-ecommerce/productManagement.webp',
+          '/projects/vue-ecommerce/addProduct.webp',
+          '/projects/vue-ecommerce/editProduct.webp',
+          '/projects/vue-ecommerce/orders.webp'
+        ]
+      },
+      {
+        title: 'User Dashboard',
+        description:
+          'User-centric dashboard for managing profiles, settings, and viewing order history.',
+        imgArr: [
+          '/projects/vue-ecommerce/dashboardUser.webp',
+          '/projects/vue-ecommerce/profile.webp',
+          '/projects/vue-ecommerce/setting.webp'
+        ]
+      }
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        'This is a full-stack e-commerce web application built using Vue.js, Express.js, and MongoDB. It provides a seamless shopping experience for users and a powerful management interface for administrators.',
+        'The application features secure user authentication, a dynamic product catalog, and a robust shopping cart system. The admin dashboard allows for easy management of products, orders, and user accounts, providing valuable insights into sales and performance.'
+      ],
+      bullets: [
+        'Built a full-stack e-commerce application using Vue.js and Node.js',
+        'Implemented secure user authentication and authorization with JWT',
+        'Developed a responsive product catalog with search and filter capabilities',
+        'Created a shopping cart and wishlist functionality for enhanced user experience',
+        'Built a comprehensive admin dashboard for managing products, orders, and users',
+        'Integrated Cloudinary for efficient image management',
+        'Utilized MongoDB for flexible and scalable data storage',
+        'Implemented responsive design ensuring compatibility across devices'
+      ]
+    }
   }
 ];
 

@@ -42,7 +42,8 @@ export type ValidSkills =
   | 'AWS SNS'
   | 'Bull Queue'
   | 'JWT'
-  | 'Passport.js';
+  | 'Passport.js'
+  | 'Vue.js';
 
 export type ValidCategory =
   | 'Full Stack'
