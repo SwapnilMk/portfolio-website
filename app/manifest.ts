@@ -52,7 +52,7 @@ export default function manifest(): MetadataRoute.Manifest {
         type: 'image/png'
       }
     ],
-    categories: ['portfolio', 'blog', 'projects', 'experience', 'resume'],
+    categories: ['portfolio', 'projects', 'experience', 'resume'],
     lang: 'en',
     dir: 'ltr',
     scope: '/'

@@ -5,6 +5,7 @@ import ProjectCard from '@/components/projects/project-card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Projects } from '@/config/projects';
 import { pagesConfig } from '@/config/pages';
+import * as motion from 'framer-motion/client';
 
 export const metadata: Metadata = {
   title: pagesConfig.projects.metadata.title,
@@ -20,11 +21,23 @@ const renderContent = (tabVal: string) => {
   }
 
   return (
-    <div className='static mx-auto my-4 grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3'>
-      {projectArr.map((project) => (
-        <ProjectCard project={project} key={project.id} />
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className='static mx-auto my-4 grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3'
+    >
+      {projectArr.map((project, index) => (
+        <motion.div
+          key={project.id}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: index * 0.1 }}
+        >
+          <ProjectCard project={project} />
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 

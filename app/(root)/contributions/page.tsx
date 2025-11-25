@@ -13,6 +13,7 @@ import {
   eachDayOfInterval,
   isSameDay
 } from 'date-fns';
+import * as motion from 'framer-motion/client';
 
 interface ContributionDay {
   date: string;
@@ -153,27 +154,39 @@ export default function ContributionsPage() {
 
   return (
     <div className='container mx-auto space-y-12 py-12'>
-      <OpenSource
-        repository={repo}
-        title='Proudly Open Source'
-        description={
-          repoDetails?.description ||
-          'Personal portfolio website showcasing my projects and contributions!'
-        }
-        buttonText='⭐ Star on GitHub'
-        defaultStats={{
-          stars: repoDetails?.stargazers_count || 0,
-          contributors: contributors.map((contributor) => ({
-            login: contributor.login,
-            avatar_url: contributor.avatar_url
-          }))
-          // forks: repoDetails?.forks_count || 0,
-          // language: repoDetails?.language || 'TypeScript',
-          // topics: repoDetails?.topics || []
-        }}
-      />
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <OpenSource
+          repository={repo}
+          title='Proudly Open Source'
+          description={
+            repoDetails?.description ||
+            'Personal portfolio website showcasing my projects and contributions!'
+          }
+          buttonText='⭐ Star on GitHub'
+          defaultStats={{
+            stars: repoDetails?.stargazers_count || 0,
+            contributors: contributors.map((contributor) => ({
+              login: contributor.login,
+              avatar_url: contributor.avatar_url
+            }))
+            // forks: repoDetails?.forks_count || 0,
+            // language: repoDetails?.language || 'TypeScript',
+            // topics: repoDetails?.topics || []
+          }}
+        />
+      </motion.div>
 
-      <div className='rounded-xl border bg-slate-50 p-6 dark:bg-slate-900'>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-50px' }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className='rounded-xl border bg-slate-50 p-6 dark:bg-slate-900'
+      >
         <h2 className='mb-6 text-center text-3xl font-bold tracking-tight text-slate-800 dark:text-slate-100'>
           My GitHub Contributions
         </h2>
@@ -193,7 +206,7 @@ export default function ContributionsPage() {
         )}
         {error && <p className='text-center text-red-500'>{error}</p>}
         {!isLoading && !error && <GitHubCalendar data={contributionData} />}
-      </div>
+      </motion.div>
     </div>
   );
 }

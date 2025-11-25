@@ -49,7 +49,6 @@ export const siteConfig = {
   keywords: [
     'Swapnil Mahadik',
     'Swapnil Mahadik Portfolio',
-    'Swapnil Mahadik Blog',
     'Swapnil Mahadik Projects',
     'Swapnil Mahadik Experience',
     'Swapnil Mahadik Resume',

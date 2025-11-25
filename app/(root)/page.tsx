@@ -21,6 +21,7 @@ import DownloadCV from '@/components/features/download-button';
 import { SocialButton } from '@/components/features/social-button';
 import { Timeline } from '@/components/ui/timeline';
 import { experience } from '@/config/experience';
+import * as motion from 'framer-motion/client';
 
 export const metadata: Metadata = {
   title: pagesConfig.home.metadata.title,
@@ -42,12 +43,28 @@ export default async function IndexPage() {
           )}
         />
         <div className='relative z-[1] max-w-screen-md text-center'>
-          <AnimatedShinyTextBadge />
-          <h1 className='mt-3 text-4xl font-bold !leading-[1.2] tracking-tight sm:text-5xl md:text-6xl'>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <AnimatedShinyTextBadge />
+          </motion.div>
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className='mt-3 text-4xl font-bold !leading-[1.2] tracking-tight sm:text-5xl md:text-6xl'
+          >
             Building Scalable & Engaging{' '}
             <AuroraText> Web Experiences</AuroraText>
-          </h1>
-          <p className='mt-6 text-[17px] md:text-lg'>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className='mt-6 text-[17px] md:text-lg'
+          >
             Hey there! I’m Swapnil Mahadik, a
             <FlipWords words={siteConfig.role} />
             passionate about crafting scalable, high-performance web
@@ -55,17 +72,28 @@ export default async function IndexPage() {
             powerful, efficient backends, I love turning ideas into seamless
             digital experiences. Let’s collaborate and build something amazing
             together!
-          </p>
-          <div className='mt-12 flex items-center justify-center gap-4'>
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className='mt-12 flex items-center justify-center gap-4'
+          >
             <HeroButton />
-          </div>
+          </motion.div>
         </div>
       </section>
       <section
         id='about'
         className='container space-y-6 bg-slate-50 py-10 dark:bg-transparent'
       >
-        <div className='mx-auto flex max-w-full flex-col items-center gap-12 md:flex-row-reverse md:items-start md:gap-16'>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
+          transition={{ duration: 0.5 }}
+          className='mx-auto flex max-w-full flex-col items-center gap-12 md:flex-row-reverse md:items-start md:gap-16'
+        >
           {/* Profile + Social Buttons */}
           <div className='flex flex-col items-center gap-6 md:items-start'>
             <ProfileImage className='hidden md:block' />
@@ -95,7 +123,7 @@ export default async function IndexPage() {
               <DownloadCV />
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <div className='relative w-full overflow-clip'>
         <Timeline data={experience} />
@@ -105,14 +133,20 @@ export default async function IndexPage() {
         id='skills'
         className='container space-y-6 bg-slate-50 py-10 dark:bg-transparent'
       >
-        <div className='mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center'>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
+          transition={{ duration: 0.5 }}
+          className='mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center'
+        >
           <h2 className='font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl'>
             {pagesConfig.skills.title}
           </h2>
           <p className='max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
             {pagesConfig.skills.description}
           </p>
-        </div>
+        </motion.div>
         <SkillsCard skills={featuredSkills} />
         <Link href='/skills' className='flex justify-center'>
           <Button variant={'outline'} className='rounded-xl'>
@@ -130,17 +164,31 @@ export default async function IndexPage() {
         id='project'
         className='container my-14 space-y-6 py-10 dark:bg-transparent'
       >
-        <div className='mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center'>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
+          transition={{ duration: 0.5 }}
+          className='mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center'
+        >
           <h2 className='font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl'>
             {pagesConfig.projects.title}
           </h2>
           <p className='max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
             {pagesConfig.projects.description}
           </p>
-        </div>
+        </motion.div>
         <div className='mx-auto grid justify-center gap-4 md:w-full lg:grid-cols-3'>
-          {featuredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {featuredProjects.map((project, index) => (
+            <motion.div
+              key={project.id}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-50px' }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <ProjectCard project={project} />
+            </motion.div>
           ))}
         </div>
         <Link href='/project' className='flex justify-center'>

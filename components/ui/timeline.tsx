@@ -50,8 +50,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
       <div ref={ref} className='relative mx-auto pb-20'>
         {data.map((item, index) => (
-          <div
+          <motion.div
             key={index}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
             className='flex justify-start pt-10 md:gap-10 md:pt-40'
           >
             <div className='sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-sm'>
@@ -69,7 +73,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </h3>
               {item.content}{' '}
             </div>
-          </div>
+          </motion.div>
         ))}
         <div
           style={{

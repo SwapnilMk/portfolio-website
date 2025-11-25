@@ -12,6 +12,7 @@ import { siteConfig } from '@/config/site';
 import { cn, formatDateFromObj } from '@/lib/utils';
 import swapnilImg from '@/public/swapnil-profile.png';
 import { SocialLinks } from '@/config/socials';
+import * as motion from 'framer-motion/client';
 
 interface ProjectPageProps {
   params: {
@@ -27,7 +28,11 @@ export default function Project({ params }: ProjectPageProps) {
 
   return (
     <article className='container relative max-w-3xl py-6 lg:py-10'>
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <time
           dateTime={Date.now().toString()}
           className='block text-sm text-muted-foreground'
@@ -75,25 +80,43 @@ export default function Project({ params }: ProjectPageProps) {
             </div>
           </Link>
         </div>
-      </div>
+      </motion.div>
 
-      <Image
-        src={project.companyLogoImg}
-        alt={project.companyName}
-        width={720}
-        height={405}
-        className='my-8 rounded-md border bg-muted transition-colors'
-        priority
-      />
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        <Image
+          src={project.companyLogoImg}
+          alt={project.companyName}
+          width={720}
+          height={405}
+          className='my-8 rounded-md border bg-muted transition-colors'
+          priority
+        />
+      </motion.div>
 
-      <div className='mb-7'>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-50px' }}
+        transition={{ duration: 0.5 }}
+        className='mb-7'
+      >
         <h2 className='mb-2 inline-block font-heading text-3xl leading-tight lg:text-3xl'>
           Tech Stack
         </h2>
         <ChipContainer textArr={project.techStack} />
-      </div>
+      </motion.div>
 
-      <div className='mb-7'>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-50px' }}
+        transition={{ duration: 0.5 }}
+        className='mb-7'
+      >
         <h2 className='mb-2 inline-block font-heading text-3xl leading-tight lg:text-3xl'>
           Description
         </h2>
@@ -102,14 +125,26 @@ export default function Project({ params }: ProjectPageProps) {
           paragraphs={project.descriptionDetails.paragraphs}
           bullets={project.descriptionDetails.bullets}
         />
-      </div>
+      </motion.div>
 
-      <div className='mb-7'>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-50px' }}
+        transition={{ duration: 0.5 }}
+        className='mb-7'
+      >
         <h2 className='mb-5 inline-block font-heading text-3xl leading-tight lg:text-3xl'>
           Page Info
         </h2>
         {project.pagesInfoArr.map((page, ind) => (
-          <div key={ind}>
+          <motion.div
+            key={ind}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-50px' }}
+            transition={{ duration: 0.5, delay: ind * 0.1 }}
+          >
             <h3 className='mt-3 flex items-center font-heading text-xl leading-tight lg:text-xl'>
               <Icons.star className='mr-2 h-5 w-5' /> {page.title}
             </h3>
@@ -127,9 +162,9 @@ export default function Project({ params }: ProjectPageProps) {
                 />
               ))}
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
       <hr className='mt-12' />
       <div className='flex justify-center py-6 lg:py-10'>
         <Link
