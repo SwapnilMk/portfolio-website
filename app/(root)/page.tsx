@@ -22,6 +22,8 @@ import { SocialButton } from '@/components/features/social-button';
 import { Timeline } from '@/components/ui/timeline';
 import { experience } from '@/config/experience';
 import * as motion from 'framer-motion/client';
+import { certifications } from '@/config/certifications';
+import CertificationCard from '@/components/certifications/certification-card';
 
 export const metadata: Metadata = {
   title: pagesConfig.home.metadata.title,
@@ -130,37 +132,6 @@ export default async function IndexPage() {
       </div>
 
       <section
-        id='skills'
-        className='container space-y-6 bg-slate-50 py-10 dark:bg-transparent'
-      >
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.5 }}
-          className='mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center'
-        >
-          <h2 className='font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl'>
-            {pagesConfig.skills.title}
-          </h2>
-          <p className='max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
-            {pagesConfig.skills.description}
-          </p>
-        </motion.div>
-        <SkillsCard skills={featuredSkills} />
-        <Link href='/skills' className='flex justify-center'>
-          <Button variant={'outline'} className='rounded-xl'>
-            <Icons.chevronDown className='mr-2 h-4 w-4' /> View All
-          </Button>
-        </Link>
-        <div className='mx-auto text-center md:max-w-[58rem]'>
-          <p className='leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
-            See all the relevant skills.
-          </p>
-        </div>
-      </section>
-
-      <section
         id='project'
         className='container my-14 space-y-6 py-10 dark:bg-transparent'
       >
@@ -199,6 +170,73 @@ export default async function IndexPage() {
         <div className='mx-auto text-center md:max-w-[58rem]'>
           <p className='leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
             See all the relevant Projects.
+          </p>
+        </div>
+      </section>
+      <section
+        id='certifications'
+        className='container space-y-6 bg-slate-50 py-10 dark:bg-transparent'
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
+          transition={{ duration: 0.5 }}
+          className='mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center'
+        >
+          <h2 className='font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl'>
+            {pagesConfig.certifications.title}
+          </h2>
+          <p className='max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
+            {pagesConfig.certifications.description}
+          </p>
+        </motion.div>
+        <div className='mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
+          {certifications.slice(0, 3).map((cert, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-50px' }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <CertificationCard certification={cert} />
+            </motion.div>
+          ))}
+        </div>
+        <Link href='/certifications' className='flex justify-center'>
+          <Button variant={'outline'} className='rounded-xl'>
+            <Icons.chevronDown className='mr-2 h-4 w-4' /> View All
+          </Button>
+        </Link>
+      </section>
+      <section
+        id='skills'
+        className='container space-y-6 bg-slate-50 py-10 dark:bg-transparent'
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
+          transition={{ duration: 0.5 }}
+          className='mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center'
+        >
+          <h2 className='font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl'>
+            {pagesConfig.skills.title}
+          </h2>
+          <p className='max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
+            {pagesConfig.skills.description}
+          </p>
+        </motion.div>
+        <SkillsCard skills={featuredSkills} />
+        <Link href='/skills' className='flex justify-center'>
+          <Button variant={'outline'} className='rounded-xl'>
+            <Icons.chevronDown className='mr-2 h-4 w-4' /> View All
+          </Button>
+        </Link>
+        <div className='mx-auto text-center md:max-w-[58rem]'>
+          <p className='leading-normal text-muted-foreground sm:text-lg sm:leading-7'>
+            See all the relevant skills.
           </p>
         </div>
       </section>

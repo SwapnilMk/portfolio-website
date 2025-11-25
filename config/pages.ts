@@ -63,6 +63,15 @@ export const pagesConfig: PagesConfig = {
         'Swapnil Mahadik open-source contributions and community involvement.'
     }
   },
+  certifications: {
+    title: 'Certifications',
+    description: 'Professional certifications and achievements.',
+    metadata: {
+      title: 'Certifications',
+      description:
+        'Swapnil Mahadik professional certifications and achievements.'
+    }
+  },
   resume: {
     title: 'Resume',
     description: 'Swapnil Mahadik resume.',
