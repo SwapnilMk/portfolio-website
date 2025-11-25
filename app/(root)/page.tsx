@@ -24,6 +24,8 @@ import { experience } from '@/config/experience';
 import * as motion from 'framer-motion/client';
 import { certifications } from '@/config/certifications';
 import CertificationCard from '@/components/certifications/certification-card';
+import { services } from '@/config/services';
+import ServiceCard from '@/components/services/service-card';
 
 export const metadata: Metadata = {
   title: pagesConfig.home.metadata.title,
@@ -157,6 +159,7 @@ export default async function IndexPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              className='h-full'
             >
               <ProjectCard project={project} />
             </motion.div>

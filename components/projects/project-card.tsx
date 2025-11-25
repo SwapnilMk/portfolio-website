@@ -12,8 +12,8 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className='relative max-w-sm rounded-lg border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-transparent'>
-      <div className='relative h-[200px] w-full'>
+    <div className='relative flex h-full flex-col rounded-lg border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-transparent'>
+      <div className='relative h-[200px] w-full shrink-0'>
         <Image
           className='rounded-lg border border-gray-200 object-cover dark:border-gray-700'
           src={project.companyLogoImg}
@@ -21,18 +21,18 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           fill
         />
       </div>
-      <div className='space-y-3 pt-5'>
+      <div className='flex flex-1 flex-col space-y-3 pt-5'>
         <h5 className='text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
           {project.companyName}
         </h5>
-        <p className='line-clamp-3 font-normal text-gray-700 dark:text-gray-400'>
+        <p className='line-clamp-3 flex-1 font-normal text-gray-700 dark:text-gray-400'>
           {project.shortDescription}
         </p>
         <div className='flex flex-wrap gap-2'>
           <ChipContainer textArr={project.category} />
         </div>
-        <Link href={`/project/${project.id}`}>
-          <Button variant={'default'} className='mt-2'>
+        <Link href={`/project/${project.id}`} className='mt-auto pt-2'>
+          <Button variant={'default'}>
             Read more
             <Icons.chevronRight className='ml-1 w-4' />
           </Button>

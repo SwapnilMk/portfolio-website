@@ -12,6 +12,8 @@ import { routesConfig } from '@/config/routes';
 import { cn } from '@/lib/utils';
 import Preloader from '@/components/features/preloader';
 
+import { ScrollProgress } from '@/components/ui/scroll-progress';
+
 interface MarketingLayoutProps {
   children: React.ReactNode;
 }
@@ -49,6 +51,7 @@ export default function MarketingLayout({ children }: MarketingLayoutProps) {
         <Preloader onComplete={() => setIsLoading(false)} />
       ) : (
         <div className='flex min-h-screen flex-col'>
+          <ScrollProgress />
           <header
             className={cn(
               'container sticky top-0 z-50 bg-background transition-transform duration-300',

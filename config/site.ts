@@ -2,6 +2,7 @@ export const siteConfig = {
   name: 'Swapnil Mahadik Portfolio',
   authorName: 'Swapnil Mahadik',
   username: 'swapnilMk',
+  email: 'mswapnil218@gmail.com',
   role: [
     'Full Stack Developer',
     'Frontend Developer',

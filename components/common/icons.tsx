@@ -24,6 +24,10 @@ import {
   SunMedium,
   Trash,
   User,
+  Server,
+  Cloud,
+  Palette,
+  Database,
   X
 } from 'lucide-react';
 import { AiFillStar } from 'react-icons/ai';
@@ -220,5 +224,9 @@ export const Icons = {
   linkedin: SiLinkedin,
   instagram: SiInstagram,
   whatsapp: SiWhatsapp,
-  facebook: SiFacebook
+  facebook: SiFacebook,
+  server: Server,
+  cloud: Cloud,
+  palette: Palette,
+  database: Database
 };

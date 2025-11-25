@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 import {
   motion,
   useScroll,
@@ -137,10 +138,10 @@ export const ProductCard = ({
       className='group/product relative h-96 w-[30rem] shrink-0'
     >
       <a href={product.link} className='block group-hover/product:shadow-2xl'>
-        <img
+        <Image
           src={product.thumbnail}
-          height='600'
-          width='600'
+          height={600}
+          width={600}
           className='absolute inset-0 h-full w-full object-cover object-left-top'
           alt={product.title}
         />

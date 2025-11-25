@@ -110,71 +110,157 @@ export const Projects: ProjectInterface[] = [
     }
   },
   {
-    id: 'tech-tea',
-    companyName: 'TechTea',
+    id: 'real-estate-management',
+    companyName: 'Real Estate Management System',
     type: 'Personal Project',
     category: ['Web Dev', 'Full Stack', 'UI/UX'],
     shortDescription:
-      'TechTea is a modern React-based blog platform for tech enthusiasts to share and discuss the latest technology news. Built with a focus on user experience and performance, it provides a seamless platform for tech content creators and readers.',
-    websiteLink: 'https://techtea-two.vercel.app/',
+      'A comprehensive web application for a real estate agency, built using the MERN stack (MongoDB, Express.js, React, Node.js). This application facilitates property management for agents and property discovery for clients, featuring secure authentication, real-time updates, and a responsive design.',
+    websiteLink: 'https://real-estate-management-web.vercel.app/',
+    githubLink:
+      'https://github.com/SwapnilMk/real-estate-management-system.git',
     techStack: [
       'React',
-      'Redux Toolkit',
-      'React Router Dom',
-      'Tailwind CSS',
       'Vite',
+      'Typescript',
+      'Redux Toolkit',
+      'Tailwind CSS',
+      'Shadcn UI',
       'Node.js',
-      'MongoDB'
+      'Express.js',
+      'MongoDB',
+      'JWT'
     ],
-    startDate: new Date('2024-01-01'), // Update this to your actual start date
-    endDate: new Date('2024-03-01'), // Update this to your actual end date
-    companyLogoImg: '/projects/techtea/home.webp',
+    startDate: new Date('2024-11-01'),
+    endDate: new Date('2025-02-01'),
+    companyLogoImg: '/projects/real-estate-management/home.webp',
     pagesInfoArr: [
       {
-        title: 'Landing Page',
+        title: 'Landing & Authentication',
         description:
-          'Modern and responsive landing page featuring latest tech news and blog posts with smooth animations and lazy loading for optimal performance.',
+          'A modern landing page with secure authentication options including login, sign-up, and password recovery.',
         imgArr: [
-          '/projects/techtea/home.webp',
-          '/projects/techtea/landing_1.webp'
+          '/projects/real-estate-management/home.webp',
+          '/projects/real-estate-management/about.webp',
+          '/projects/real-estate-management/contact.webp',
+          '/projects/real-estate-management/login.webp',
+          '/projects/real-estate-management/sign-up.webp',
+          '/projects/real-estate-management/forgot-password.webp'
         ]
       },
       {
-        title: 'Blog Post Creation',
+        title: 'Property Discovery',
         description:
-          'Intuitive interface for creating and editing blog posts with rich text formatting and image upload capabilities.',
-        imgArr: ['/projects/techtea/blog_create.webp']
-      },
-      {
-        title: 'User Authentication',
-        description:
-          'Secure user authentication system with sign-up and login functionality, protected routes, and user profile management.',
+          'Advanced property search with map integration and detailed listings to help users find their perfect home.',
         imgArr: [
-          '/projects/techtea/auth_1.webp',
-          '/projects/techtea/auth_2.webp',
-          '/projects/techtea/profile.webp'
+          '/projects/real-estate-management/listing.webp',
+          '/projects/real-estate-management/map-search.webp'
         ]
       },
       {
-        title: 'Viewing Blog Posts',
+        title: 'Agent Dashboard & Management',
         description:
-          'View and interact with blog posts, including comments and likes, with real-time updates and toast notifications for better user feedback.',
-        imgArr: ['/projects/techtea/blog_1.webp']
+          'Comprehensive tools for agents to manage properties, view statistics, and handle inquiries.',
+        imgArr: [
+          '/projects/real-estate-management/agent-dashboard.webp',
+          '/projects/real-estate-management/overview.webp',
+          '/projects/real-estate-management/property-management.webp',
+          '/projects/real-estate-management/add-property.webp',
+          '/projects/real-estate-management/update-property.webp',
+          '/projects/real-estate-management/contact-dashboard.webp',
+          '/projects/real-estate-management/inquires-dashboard.webp',
+          '/projects/real-estate-management/user-management-dashboard.webp'
+        ]
+      },
+      {
+        title: 'User & Agent Features',
+        description:
+          'Dedicated profiles for users and agents, with features for managing inquiries and contact details.',
+        imgArr: [
+          '/projects/real-estate-management/profile.webp',
+          '/projects/real-estate-management/agent profile.webp',
+          '/projects/real-estate-management/agent-contact.webp',
+          '/projects/real-estate-management/inquires.webp'
+        ]
       }
     ],
     descriptionDetails: {
       paragraphs: [
-        'TechTea is a modern blog platform specifically designed for tech enthusiasts and content creators. The platform features a clean, intuitive interface that makes it easy for users to share and discover the latest technology news and insights.',
-        'Built with performance and user experience in mind, TechTea implements modern web development practices including lazy loading, state management with Redux, and responsive design principles.'
+        'A comprehensive web application for a real estate agency, built using the MERN stack (MongoDB, Express.js, React, Node.js). This application facilitates property management for agents and property discovery for clients, featuring secure authentication, real-time updates, and a responsive design.',
+        'The system is divided into two main portals: one for agents to manage listings and view insights, and another for clients to search for properties, manage their wishlist, and contact agents. It ensures a seamless experience for both parties with a focus on security and usability.'
       ],
       bullets: [
-        'Developed a full-stack blog platform using React.js 18 and modern web technologies',
-        'Implemented user authentication and authorization with secure routes',
-        'Created a responsive design that works seamlessly across all devices',
-        'Integrated Redux Toolkit for efficient state management',
-        'Utilized Tailwind CSS for modern, maintainable styling',
-        'Implemented lazy loading and performance optimizations',
-        'Added real-time updates and toast notifications for better user feedback'
+        'Developed a full-stack real estate platform using the MERN stack (MongoDB, Express.js, React, Node.js)',
+        'Implemented secure authentication using JWT with refresh token rotation',
+        'Created a comprehensive agent dashboard for property management and client insights',
+        'Built an advanced property search system with filters for location, price, and type',
+        'Integrated Cloudinary for efficient image storage and management',
+        'Implemented responsive design using Tailwind CSS and Shadcn UI components',
+        'Utilized Redux Toolkit for efficient state management across the application',
+        'Integrated Nodemailer for email notifications and inquiries'
+      ]
+    }
+  },
+  {
+    id: 'expense-tracker',
+    companyName: 'Expense Tracker',
+    type: 'Personal Project',
+    category: ['Web Dev', 'Full Stack', 'UI/UX'],
+    shortDescription:
+      'A full-stack expense tracker application built with the MERN stack that allows users to add, view, and manage income and expenses with visual analytics and category filters.',
+    websiteLink: 'https://swap-expense-tracker.vercel.app/',
+    githubLink: 'https://github.com/SwapnilMk/expense-tracker',
+    techStack: [
+      'React',
+      'Vite',
+      'Redux Toolkit',
+      'Material UI',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'React Router Dom'
+    ],
+    startDate: new Date('2024-04-01'),
+    endDate: new Date('2024-06-01'),
+    companyLogoImg: '/projects/expense-tracker/overview.webp',
+    pagesInfoArr: [
+      {
+        title: 'Dashboard Overview',
+        description:
+          'Interactive dashboard displaying total income, expenses, and visual charts representing financial data.',
+        imgArr: [
+          '/projects/expense-tracker/overview.webp',
+          '/projects/expense-tracker/overview_dark.webp'
+        ]
+      },
+      {
+        title: 'Transaction History',
+        description:
+          'Displays all user transactions with filtering and sorting options for type, category, and date.',
+        imgArr: ['/projects/expense-tracker/history.webp']
+      },
+      {
+        title: 'Add Transaction',
+        description:
+          'Simple and intuitive interface to add new transactions with validation and error handling.',
+        imgArr: ['/projects/expense-tracker/add_transaction.webp']
+      }
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        'The Expense Tracker App is a full-stack financial management tool that enables users to track their income and expenses efficiently. It includes CRUD operations, filtering, and interactive charts for data visualization.',
+        'The frontend is built using React, Vite, and Material-UI (MUI), while the backend is powered by Node.js, Express, and MongoDB. State management is handled with Redux Toolkit, ensuring smooth and responsive interactions.'
+      ],
+      bullets: [
+        'Built a full-stack MERN application for managing income and expenses',
+        'Implemented CRUD operations with input validation and error handling',
+        'Integrated Redux Toolkit for global state management',
+        'Used MUI X Charts for interactive data visualization',
+        'Developed RESTful APIs with Express and MongoDB (Mongoose)',
+        'Added transaction filtering by type, category, and date',
+        'Implemented responsive UI using Material-UI components',
+        'Configured Winston logger for backend monitoring and error tracking',
+        'Deployed on Vercel with environment-based configurations'
       ]
     }
   },
@@ -301,197 +387,6 @@ export const Projects: ProjectInterface[] = [
     }
   },
   {
-    id: 'expense-tracker',
-    companyName: 'Expense Tracker',
-    type: 'Personal Project',
-    category: ['Web Dev', 'Full Stack', 'UI/UX'],
-    shortDescription:
-      'A full-stack expense tracker application built with the MERN stack that allows users to add, view, and manage income and expenses with visual analytics and category filters.',
-    websiteLink: 'https://swap-expense-tracker.vercel.app/',
-    githubLink: 'https://github.com/SwapnilMk/expense-tracker',
-    techStack: [
-      'React',
-      'Vite',
-      'Redux Toolkit',
-      'Material UI',
-      'Node.js',
-      'Express.js',
-      'MongoDB',
-      'React Router Dom'
-    ],
-    startDate: new Date('2024-04-01'),
-    endDate: new Date('2024-06-01'),
-    companyLogoImg: '/projects/expense-tracker/overview.webp',
-    pagesInfoArr: [
-      {
-        title: 'Dashboard Overview',
-        description:
-          'Interactive dashboard displaying total income, expenses, and visual charts representing financial data.',
-        imgArr: [
-          '/projects/expense-tracker/overview.webp',
-          '/projects/expense-tracker/overview_dark.webp'
-        ]
-      },
-      {
-        title: 'Transaction History',
-        description:
-          'Displays all user transactions with filtering and sorting options for type, category, and date.',
-        imgArr: ['/projects/expense-tracker/history.webp']
-      },
-      {
-        title: 'Add Transaction',
-        description:
-          'Simple and intuitive interface to add new transactions with validation and error handling.',
-        imgArr: ['/projects/expense-tracker/add_transaction.webp']
-      }
-    ],
-    descriptionDetails: {
-      paragraphs: [
-        'The Expense Tracker App is a full-stack financial management tool that enables users to track their income and expenses efficiently. It includes CRUD operations, filtering, and interactive charts for data visualization.',
-        'The frontend is built using React, Vite, and Material-UI (MUI), while the backend is powered by Node.js, Express, and MongoDB. State management is handled with Redux Toolkit, ensuring smooth and responsive interactions.'
-      ],
-      bullets: [
-        'Built a full-stack MERN application for managing income and expenses',
-        'Implemented CRUD operations with input validation and error handling',
-        'Integrated Redux Toolkit for global state management',
-        'Used MUI X Charts for interactive data visualization',
-        'Developed RESTful APIs with Express and MongoDB (Mongoose)',
-        'Added transaction filtering by type, category, and date',
-        'Implemented responsive UI using Material-UI components',
-        'Configured Winston logger for backend monitoring and error tracking',
-        'Deployed on Vercel with environment-based configurations'
-      ]
-    }
-  },
-  {
-    id: 'econs-exim-gateway',
-    companyName: 'EGC India (Econs Exim Gateway)',
-    type: 'Professional',
-    category: ['Web Dev', 'UI/UX'],
-    shortDescription:
-      "Official website of EGC India (Econs Gateway Commercial Services Pvt. Ltd.) — a modern, responsive single-page application built with React, Vite, and TypeScript. It showcases the company's dual focus on global commercial services and innovative technology platforms.",
-    websiteLink: 'https://econs-exim-gateway.vercel.app/',
-    techStack: ['React', 'Vite', 'Tailwind CSS', 'Shadcn UI', 'Framer Motion'],
-    startDate: new Date('2025-01-01'),
-    endDate: new Date('2025-03-01'),
-    companyLogoImg: '/projects/econs/dashboard.png',
-    pagesInfoArr: [
-      {
-        title: 'Landing Page',
-        description:
-          'A responsive landing page introducing EGC India’s mission and services, featuring smooth animations and modern layouts.',
-        imgArr: ['/projects/econs/dashboard.png']
-      }
-    ],
-    descriptionDetails: {
-      paragraphs: [
-        'This repository contains the source code for the official website of EGC India (Econs Gateway Commercial Services Pvt. Ltd.). The website is a modern, responsive single-page application built with React, Vite, and TypeScript. It showcases the company’s dual focus on global commercial services and innovative technology platforms.',
-        'EGC India is a technology-driven company that provides comprehensive solutions in two main areas: Commercial Services and IT & Technology. The website serves as the primary digital presence for EGC India, offering information about services, platforms, partners, and company vision.'
-      ],
-      bullets: [
-        'Developed a responsive corporate website using React, TypeScript, and Tailwind CSS',
-        'Implemented Framer Motion for smooth animations and engaging UI transitions',
-        'Built reusable components using Shadcn UI for design consistency',
-        'Integrated React Hook Form and Zod for robust form validation',
-        'Configured Vite for optimized builds and fast HMR during development',
-        'Structured project with scalable directories for assets, components, layouts, and routes',
-        'Ensured clean code practices with ESLint and Prettier setup'
-      ]
-    }
-  },
-  {
-    id: 'real-estate-management',
-    companyName: 'Real Estate Management System',
-    type: 'Personal Project',
-    category: ['Web Dev', 'Full Stack', 'UI/UX'],
-    shortDescription:
-      'A comprehensive web application for a real estate agency, built using the MERN stack (MongoDB, Express.js, React, Node.js). This application facilitates property management for agents and property discovery for clients, featuring secure authentication, real-time updates, and a responsive design.',
-    websiteLink: 'https://real-estate-management-web.vercel.app/',
-    githubLink:
-      'https://github.com/SwapnilMk/real-estate-management-system.git',
-    techStack: [
-      'React',
-      'Vite',
-      'Typescript',
-      'Redux Toolkit',
-      'Tailwind CSS',
-      'Shadcn UI',
-      'Node.js',
-      'Express.js',
-      'MongoDB',
-      'JWT'
-    ],
-    startDate: new Date('2024-11-01'),
-    endDate: new Date('2025-02-01'),
-    companyLogoImg: '/projects/real-estate-management/home.webp',
-    pagesInfoArr: [
-      {
-        title: 'Landing & Authentication',
-        description:
-          'A modern landing page with secure authentication options including login, sign-up, and password recovery.',
-        imgArr: [
-          '/projects/real-estate-management/home.webp',
-          '/projects/real-estate-management/about.webp',
-          '/projects/real-estate-management/contact.webp',
-          '/projects/real-estate-management/login.webp',
-          '/projects/real-estate-management/sign-up.webp',
-          '/projects/real-estate-management/forgot-password.webp'
-        ]
-      },
-      {
-        title: 'Property Discovery',
-        description:
-          'Advanced property search with map integration and detailed listings to help users find their perfect home.',
-        imgArr: [
-          '/projects/real-estate-management/listing.webp',
-          '/projects/real-estate-management/map-search.webp'
-        ]
-      },
-      {
-        title: 'Agent Dashboard & Management',
-        description:
-          'Comprehensive tools for agents to manage properties, view statistics, and handle inquiries.',
-        imgArr: [
-          '/projects/real-estate-management/agent-dashboard.webp',
-          '/projects/real-estate-management/overview.webp',
-          '/projects/real-estate-management/property-management.webp',
-          '/projects/real-estate-management/add-property.webp',
-          '/projects/real-estate-management/update-property.webp',
-          '/projects/real-estate-management/contact-dashboard.webp',
-          '/projects/real-estate-management/inquires-dashboard.webp',
-          '/projects/real-estate-management/user-management-dashboard.webp'
-        ]
-      },
-      {
-        title: 'User & Agent Features',
-        description:
-          'Dedicated profiles for users and agents, with features for managing inquiries and contact details.',
-        imgArr: [
-          '/projects/real-estate-management/profile.webp',
-          '/projects/real-estate-management/agent profile.webp',
-          '/projects/real-estate-management/agent-contact.webp',
-          '/projects/real-estate-management/inquires.webp'
-        ]
-      }
-    ],
-    descriptionDetails: {
-      paragraphs: [
-        'A comprehensive web application for a real estate agency, built using the MERN stack (MongoDB, Express.js, React, Node.js). This application facilitates property management for agents and property discovery for clients, featuring secure authentication, real-time updates, and a responsive design.',
-        'The system is divided into two main portals: one for agents to manage listings and view insights, and another for clients to search for properties, manage their wishlist, and contact agents. It ensures a seamless experience for both parties with a focus on security and usability.'
-      ],
-      bullets: [
-        'Developed a full-stack real estate platform using the MERN stack (MongoDB, Express.js, React, Node.js)',
-        'Implemented secure authentication using JWT with refresh token rotation',
-        'Created a comprehensive agent dashboard for property management and client insights',
-        'Built an advanced property search system with filters for location, price, and type',
-        'Integrated Cloudinary for efficient image storage and management',
-        'Implemented responsive design using Tailwind CSS and Shadcn UI components',
-        'Utilized Redux Toolkit for efficient state management across the application',
-        'Integrated Nodemailer for email notifications and inquiries'
-      ]
-    }
-  },
-  {
     id: 'vue-ecommerce-app',
     companyName: 'Vue E-commerce App',
     type: 'Personal Project',
@@ -571,6 +466,111 @@ export const Projects: ProjectInterface[] = [
         'Integrated Cloudinary for efficient image management',
         'Utilized MongoDB for flexible and scalable data storage',
         'Implemented responsive design ensuring compatibility across devices'
+      ]
+    }
+  },
+  {
+    id: 'econs-exim-gateway',
+    companyName: 'EGC India (Econs Exim Gateway)',
+    type: 'Professional',
+    category: ['Web Dev', 'UI/UX'],
+    shortDescription:
+      "Official website of EGC India (Econs Gateway Commercial Services Pvt. Ltd.) — a modern, responsive single-page application built with React, Vite, and TypeScript. It showcases the company's dual focus on global commercial services and innovative technology platforms.",
+    websiteLink: 'https://econs-exim-gateway.vercel.app/',
+    techStack: ['React', 'Vite', 'Tailwind CSS', 'Shadcn UI', 'Framer Motion'],
+    startDate: new Date('2025-01-01'),
+    endDate: new Date('2025-03-01'),
+    companyLogoImg: '/projects/econs/dashboard.png',
+    pagesInfoArr: [
+      {
+        title: 'Landing Page',
+        description:
+          'A responsive landing page introducing EGC India’s mission and services, featuring smooth animations and modern layouts.',
+        imgArr: ['/projects/econs/dashboard.png']
+      }
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        'This repository contains the source code for the official website of EGC India (Econs Gateway Commercial Services Pvt. Ltd.). The website is a modern, responsive single-page application built with React, Vite, and TypeScript. It showcases the company’s dual focus on global commercial services and innovative technology platforms.',
+        'EGC India is a technology-driven company that provides comprehensive solutions in two main areas: Commercial Services and IT & Technology. The website serves as the primary digital presence for EGC India, offering information about services, platforms, partners, and company vision.'
+      ],
+      bullets: [
+        'Developed a responsive corporate website using React, TypeScript, and Tailwind CSS',
+        'Implemented Framer Motion for smooth animations and engaging UI transitions',
+        'Built reusable components using Shadcn UI for design consistency',
+        'Integrated React Hook Form and Zod for robust form validation',
+        'Configured Vite for optimized builds and fast HMR during development',
+        'Structured project with scalable directories for assets, components, layouts, and routes',
+        'Ensured clean code practices with ESLint and Prettier setup'
+      ]
+    }
+  },
+  {
+    id: 'tech-tea',
+    companyName: 'TechTea',
+    type: 'Personal Project',
+    category: ['Web Dev', 'Full Stack', 'UI/UX'],
+    shortDescription:
+      'TechTea is a modern React-based blog platform for tech enthusiasts to share and discuss the latest technology news. Built with a focus on user experience and performance, it provides a seamless platform for tech content creators and readers.',
+    websiteLink: 'https://techtea-two.vercel.app/',
+    techStack: [
+      'React',
+      'Redux Toolkit',
+      'React Router Dom',
+      'Tailwind CSS',
+      'Vite',
+      'Node.js',
+      'MongoDB'
+    ],
+    startDate: new Date('2024-01-01'), // Update this to your actual start date
+    endDate: new Date('2024-03-01'), // Update this to your actual end date
+    companyLogoImg: '/projects/techtea/home.webp',
+    pagesInfoArr: [
+      {
+        title: 'Landing Page',
+        description:
+          'Modern and responsive landing page featuring latest tech news and blog posts with smooth animations and lazy loading for optimal performance.',
+        imgArr: [
+          '/projects/techtea/home.webp',
+          '/projects/techtea/landing_1.webp'
+        ]
+      },
+      {
+        title: 'Blog Post Creation',
+        description:
+          'Intuitive interface for creating and editing blog posts with rich text formatting and image upload capabilities.',
+        imgArr: ['/projects/techtea/blog_create.webp']
+      },
+      {
+        title: 'User Authentication',
+        description:
+          'Secure user authentication system with sign-up and login functionality, protected routes, and user profile management.',
+        imgArr: [
+          '/projects/techtea/auth_1.webp',
+          '/projects/techtea/auth_2.webp',
+          '/projects/techtea/profile.webp'
+        ]
+      },
+      {
+        title: 'Viewing Blog Posts',
+        description:
+          'View and interact with blog posts, including comments and likes, with real-time updates and toast notifications for better user feedback.',
+        imgArr: ['/projects/techtea/blog_1.webp']
+      }
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        'TechTea is a modern blog platform specifically designed for tech enthusiasts and content creators. The platform features a clean, intuitive interface that makes it easy for users to share and discover the latest technology news and insights.',
+        'Built with performance and user experience in mind, TechTea implements modern web development practices including lazy loading, state management with Redux, and responsive design principles.'
+      ],
+      bullets: [
+        'Developed a full-stack blog platform using React.js 18 and modern web technologies',
+        'Implemented user authentication and authorization with secure routes',
+        'Created a responsive design that works seamlessly across all devices',
+        'Integrated Redux Toolkit for efficient state management',
+        'Utilized Tailwind CSS for modern, maintainable styling',
+        'Implemented lazy loading and performance optimizations',
+        'Added real-time updates and toast notifications for better user feedback'
       ]
     }
   }
