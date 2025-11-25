@@ -32,7 +32,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             Contact
           </Link>
           <Link
-            href='/projects'
+            href='/project'
             className='text-sm font-medium underline-offset-4 hover:underline'
           >
             Projects
