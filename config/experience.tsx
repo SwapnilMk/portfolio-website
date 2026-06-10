@@ -2,6 +2,45 @@ import Image from 'next/image';
 
 export const experience = [
   {
+    title: 'Present',
+    content: (
+      <div>
+        <p className='mb-8 text-xs font-normal text-neutral-800 dark:text-neutral-200 md:text-sm'>
+          <strong>
+            Full-stack Developer — Mytek Innovations Pvt Ltd
+          </strong>
+          <br />
+          Dec 2025 – Present · 7 mos | Turbhe, Navi Mumbai · On-site
+        </p>
+
+        <ul className='mb-8 list-disc pl-4 text-xs font-normal text-neutral-800 dark:text-neutral-200 md:text-sm'>
+          <li>
+            Developing and maintaining responsive, high-performance web applications using React, Next.js, and Node.js.
+          </li>
+          <li>
+            Designing and optimizing database schemas, building scalable RESTful APIs, and implementing secure integrations.
+          </li>
+          <li>
+            Collaborating with cross-functional teams to translate user requirements into robust technical solutions.
+          </li>
+          <li>
+            Improving code quality and deployment efficiency, adhering to best practices in modern web development.
+          </li>
+        </ul>
+
+        <div className='mt-4 grid grid-cols-3 gap-4'>
+          <Image
+            src='/experience/myteklogo.png'
+            alt='Mytek Innovations logo'
+            width={150}
+            height={150}
+            className='h-40 w-auto rounded-lg object-cover shadow-md md:h-44 lg:h-60'
+          />
+        </div>
+      </div>
+    )
+  },
+  {
     title: '2025',
     content: (
       <div>

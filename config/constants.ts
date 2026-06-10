@@ -43,7 +43,20 @@ export type ValidSkills =
   | 'Bull Queue'
   | 'JWT'
   | 'Passport.js'
-  | 'Vue.js';
+  | 'Vue.js'
+  | 'PostgreSQL'
+  | 'NextAuth.js'
+  | 'Capacitor'
+  | 'Claude AI'
+  | 'LangChain'
+  | 'LangGraph'
+  | 'Next.js 15'
+  | 'Next.js 16'
+  | 'WebAuthn'
+  | 'Biometric Auth'
+  | 'TanStack Table'
+  | 'TanStack Query'
+  | 'Leaflet';
 
 export type ValidCategory =
   | 'Full Stack'

@@ -29,13 +29,162 @@ export interface ProjectInterface {
 
 export const Projects: ProjectInterface[] = [
   {
+    id: 'egc-workforce',
+    companyName: 'EGC Workforce Core',
+    type: 'Professional',
+    category: ['Web Dev', 'Full Stack', 'UI/UX'],
+    shortDescription:
+      'EGC Workforce Core is a next-generation enterprise workforce and SaaS management system. It features secure biometric and WebAuthn authentication, geo-fenced attendance tracking, real-time workspace chat, and comprehensive employee directories.',
+    websiteLink: 'https://workforce-core-system.vercel.app',
+    githubLink: 'https://github.com/SwapnilMk/workforce_core_System',
+    techStack: [
+      'Next.js 16',
+      'Typescript',
+      'Prisma ORM',
+      'MongoDB',
+      'Tailwind CSS',
+      'Shadcn UI',
+      'Capacitor',
+      'WebAuthn',
+      'Biometric Auth',
+      'TanStack Table',
+      'TanStack Query',
+      'Leaflet',
+      'AWS S3',
+      'Vercel'
+    ],
+    startDate: new Date('2025-06-01'),
+    endDate: new Date('2026-05-15'),
+    companyLogoImg: '/projects/workforce/dashboard.png',
+    pagesInfoArr: [
+      {
+        title: 'Biometric Welcome',
+        description:
+          'User-friendly biometric login page showing fingerprint and Face ID login options alongside traditional email/password credentials.',
+        imgArr: ['/projects/workforce/biometric.png']
+      },
+      {
+        title: 'Access System',
+        description:
+          'Secure organization login panel using WebAuthn standards and credentials fallback.',
+        imgArr: ['/projects/workforce/login.png']
+      },
+      {
+        title: 'Dashboard Overview',
+        description:
+          'Comprehensive analytics dashboard tracking payroll costs, workforce metrics, attendance rates, pending leaves, attrition rates, and recent check-ins.',
+        imgArr: ['/projects/workforce/dashboard.png']
+      },
+      {
+        title: 'Employee Directory',
+        description:
+          'Centralized database managing EGC workforce roles, phone numbers, onboarding status, and real-time credentials configurations.',
+        imgArr: ['/projects/workforce/employees.png']
+      },
+      {
+        title: 'Workspace Chat',
+        description:
+          'Real-time corporate messaging application supporting public lobby channels and private direct groups.',
+        imgArr: ['/projects/workforce/chat.png']
+      }
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        'EGC Workforce Core is a highly secure, next-generation enterprise workforce and SaaS management platform built to optimize payroll, attendance, and internal communications.',
+        'The system utilizes cutting-edge biometric security via WebAuthn, providing passwordless Face ID and fingerprint sign-in. It features precision geo-fencing using maps for location-tracked employee check-ins, a full-featured real-time chat workspace, and advanced administrative dashboards for payroll planning, employee onboarding, and attendance auditing.'
+      ],
+      bullets: [
+        'Architected a full-stack SaaS platform using Next.js 16 (App Router), React 19, and TypeScript',
+        'Implemented passwordless secure login using WebAuthn (SimpleWebAuthn) and native Capacitor biometrics',
+        'Designed real-time messaging channels and group chats using Redis and socket-based communications',
+        'Built geo-fencing features using Leaflet and React-Leaflet maps for location-authenticated attendance check-ins',
+        'Leveraged Prisma ORM with MongoDB to store relational and document data efficiently',
+        'Developed complex data tables with filtering, pagination, and CSV/XLSX exports using TanStack Table',
+        'Integrated AWS S3 for secure file and document storage'
+      ]
+    }
+  },
+  {
+    id: 'mirror-mind',
+    companyName: 'MirrorMind',
+    type: 'Personal Project',
+    category: ['Web Dev', 'Full Stack', 'UI/UX'],
+    shortDescription:
+      'MirrorMind is an AI-powered behavioral reflection and decision-intelligence platform that acts as your cognitive twin. It helps users reflect on thoughts, track decision patterns, and receive personalized AI insights.',
+    websiteLink: 'https://mirror-mind-app.vercel.app/',
+    githubLink: 'https://github.com/SwapnilMk/mirror-mind',
+    techStack: [
+      'Next.js 15',
+      'Typescript',
+      'Prisma ORM',
+      'PostgreSQL',
+      'NextAuth.js',
+      'Claude AI',
+      'Tailwind CSS',
+      'Shadcn UI',
+      'Capacitor',
+      'LangChain',
+      'Vercel'
+    ],
+    startDate: new Date('2026-04-15'),
+    endDate: new Date('2026-05-30'),
+    companyLogoImg: '/projects/mirrormind/dashboard.png',
+    pagesInfoArr: [
+      {
+        title: 'Cognitive Dashboard',
+        description:
+          'AI-powered behavioral reflection dashboard featuring emotional state mapping, average decision confidence metrics, and active behavioral auditing.',
+        imgArr: ['/projects/mirrormind/dashboard.png']
+      },
+      {
+        title: 'Reflection Companion',
+        description:
+          'Real-time chat companion interface where users can chat with their cognitive double, analyze recent decisions, and check behavioral alignment.',
+        imgArr: ['/projects/mirrormind/companion.png']
+      },
+      {
+        title: 'Simulation Suite',
+        description:
+          'Interface for consulting different AI advisor personas (e.g. Future Self, Past Self, Stoic Mentor, Brutal Analyst) to reason through complex dilemmas.',
+        imgArr: ['/projects/mirrormind/personas.png']
+      },
+      {
+        title: 'Behavioral Patterns',
+        description:
+          'Deep behavioral diagnostics and cognitive insight tracking based on historical decision logs and reflection audits.',
+        imgArr: ['/projects/mirrormind/patterns.png']
+      },
+      {
+        title: 'User Profile',
+        description:
+          'User-centric profile showing reflection stats, membership tier, and options for exporting decision logs or managing privacy.',
+        imgArr: ['/projects/mirrormind/profile.png']
+      }
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        'MirrorMind is an AI-powered decision intelligence and journaling platform that functions as a personal cognitive twin. It allows users to write rich journal entries, reason through critical decisions, and get insights generated by Anthropic\'s Claude model.',
+        'By tracking entries over time, the platform identifies cognitive loops, emotional patterns, and behavioral contradictions, helping users develop greater self-awareness and decision alignment. It also features a Simulation Suite where users can begin consultations with specific advisor personas like a Stoic Mentor or Brutal Analyst.'
+      ],
+      bullets: [
+        'Developed a high-performance full-stack web application using Next.js 15 (App Router) and TypeScript',
+        'Integrated Anthropic Claude (via freemodel.dev API) to generate cognitive insights and reflections',
+        'Designed and implemented a relational database schema using Prisma ORM and PostgreSQL',
+        'Developed a secure authentication system using NextAuth.js',
+        'Created a responsive, interactive UI utilizing Tailwind CSS and Shadcn UI components',
+        'Configured cross-platform mobile compatibility with Capacitor',
+        'Implemented decision logging, emotional analytics, and exportable data features'
+      ]
+    }
+  },
+  {
     id: 'amorattar',
     companyName: 'Amorattar',
     type: 'Personal Project',
     category: ['Web Dev', 'Full Stack', 'E-commerce', 'UI/UX'],
     shortDescription:
       'Amorattar is a modern e-commerce platform specializing in premium attars and perfumes. Built with Next.js and TypeScript, it offers a seamless shopping experience with features like real-time cart management, wishlist functionality, and an intuitive admin dashboard for product management.',
-    websiteLink: 'https://amorattar.vercel.app/',
+    websiteLink: 'https://amorperfumes786.com/',
     techStack: [
       'Next.js 14',
       'Typescript',
